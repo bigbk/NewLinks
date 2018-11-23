@@ -570,7 +570,32 @@ function nissanbtn() {
 }
 }
 }
-						    
+function gmlink() {
+	var inputvalue = document.getElementById("VIN").value;
+	inputvalue = inputvalue.replace(/ +/g, "");					      
+	if (inputvalue[0] == '{') {
+	inputvalue = inputvalue.slice(1,-1);
+	}
+	var len = inputvalue.length;
+	//	var len = document.getElementById("VIN").value.length;
+	
+	if (len <17){
+		var diff = 17 - len;
+		alert("Entered VIN is missing " + diff + " characters. Please check again.");
+	}
+	else {
+			if (len >17){
+		var diff = len - 17;
+		alert("Entered VIN has " + diff + " too many characters. Please check again.");
+	}
+	else {
+<!--	inputvalue = "1C3CCCAB1GN121627" -->
+        inputvalue = inputvalue.toUpperCase();
+	window.open("https://windowsticker-prod.aws.manheim.com/showGmWs?auctionID=&workOrderNumber=7055030&sblu=11546249&vin="+inputvalue);
+}
+}
+}
+														       
 function manheimmmr() {
 	var inputvalue = document.getElementById("VIN").value;
 	inputvalue = inputvalue.replace(/ +/g, "");					      
