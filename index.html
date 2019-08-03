@@ -393,7 +393,19 @@ var abk = document.getElementById("Avg").value;
 var rbk = document.getElementById("Rgh").value;
 var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
-document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl;
+
+if (blvl == 1){
+	document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl + xclnbk;
+	}
+if (blvl == 2){
+	document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl + clnbk;
+	}
+if (blvl == 3){
+	document.getElementById("Guidance").value = (clnbk - abk) * rlvl + abk;
+	}
+if (blvl == 4){
+	document.getElementById("Guidance").value = (abk - rbk) * rlvl + rbk;
+	}	
 }
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
