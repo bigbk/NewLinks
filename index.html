@@ -395,17 +395,18 @@ var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
 if (blvl == 1){
-	document.getElementById("Guidance").value = (((xclnbk - clnbk) * rlvl) + xclnbk);
+	var zguide = (((xclnbk - clnbk) * rlvl) + xclnbk);
 	}
 if (blvl == 2){
-	document.getElementById("Guidance").value = (((xclnbk - clnbk) * rlvl) + clnbk);
+	var zguide = (((xclnbk - clnbk) * rlvl) + clnbk);
 	}
 if (blvl == 3){
-	document.getElementById("Guidance").value = (((clnbk - abk) * rlvl) + abk);
+	var zguide = (((clnbk - abk) * rlvl) + abk);
 	}
 if (blvl == 4){
-	document.getElementById("Guidance").value = (((abk - rbk) * rlvl) + rbk);
+	var zguide = (((abk - rbk) * rlvl) + rbk);
 	}	
+document.getElementById("Guidance").value = zguide;
 }
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
