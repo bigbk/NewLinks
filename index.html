@@ -112,11 +112,28 @@
 	
 	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Book Calculator</strong></span><br>
 	<a>Calculated Guidance: </a> <input type="Text" name="Guidance" id="Guidance" /> <br>
-	<SELECT name="ratiolevel" onchange="changeguide(this.value);">
-	<OPTION selected value="blank">Choose an option</OPTION>
-	<OPTION value="1">1/2</OPTION>
-	<OPTION value="2">1/4</OPTION>
-	<OPTION value="3">1/8</OPTION>
+	<SELECT name="ratiolevel" id="Rlevel" onchange="changeguide(this.value);">
+	<OPTION selected value="blank">Choose Gauge</OPTION>
+	<OPTION value="1">1</OPTION>
+	<OPTION value="2">9/10</OPTION>
+	<OPTION value="3">4/5</OPTION>
+	<OPTION value="4">3/4</OPTION>
+	<OPTION value="5">7/10</OPTION>
+	<OPTION value="6">3/5</OPTION>
+	<OPTION value="7">1/2</OPTION>
+	<OPTION value="8">2/5</OPTION>
+	<OPTION value="9">3/10</OPTION>
+	<OPTION value="10">1/4</OPTION>
+	<OPTION value="11">1/5</OPTION>
+	<OPTION value="12">1/10</OPTION>
+	</SELECT>
+	<a> above </a>
+	<SELECT name="booklevel" id="Blevel" onchange="changeguide(this.value);">
+	<OPTION selected value="blank">Choose Book</OPTION>
+	<OPTION value="1">XClean</OPTION>
+	<OPTION value="2">Clean</OPTION>
+	<OPTION value="3">Average</OPTION>
+	<OPTION value="4">Rough</OPTION>
 	</SELECT>
 	<br>
 	<input type="text" size="20" placeholder="Xclean" name="Xclean" id="XCln" onkeyup="changeguide(this.value);" /> <br>
@@ -370,7 +387,11 @@
 function changeguide(gdnc) {
 var xclnbk = document.getElementById("XCln").value;
 var clnbk = document.getElementById("Cln").value;
-document.getElementById("Guidance").value = xclnbk - clnbk;
+var abk = document.getElementById("Avg").value;
+var rbk = document.getElementById("Rgh").value;
+var rlvl = document.getElementById("Rlevel").value;
+var blvl = document.getElementById("BLevel").value;
+document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl;
 }
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
