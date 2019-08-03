@@ -389,9 +389,9 @@ var xclnbk = document.getElementById("XCln").value;
 var clnbk = document.getElementById("Cln").value;
 var abk = document.getElementById("Avg").value;
 var rbk = document.getElementById("Rgh").value;
-<!-- var rlvl = document.getElementById("Rlevel").value;
-var blvl = document.getElementById("BLevel").value; -->
-document.getElementById("Guidance").value = (xclnbk - clnbk) * 2;
+var rlvl = document.getElementById("Rlevel").value;
+var blvl = document.getElementById("BLevel").value;
+document.getElementById("Guidance").value = xclnbk - clnbk;
 }
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
