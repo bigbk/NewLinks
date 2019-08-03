@@ -111,7 +111,13 @@
 	<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br></p>
 	
 	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Book Calculator</strong></span><br>
-	<a>Calculated Guidance: </a> <input type="number" name="Guidance" id="Guidance" /> <br>
+	<a>Calculated Guidance: </a> <input type="Text" name="Guidance" id="Guidance" /> <br>
+	<SELECT name="ratiolevel" onchange="changeguide(this.value);">
+	<OPTION selected value="blank">Choose an option</OPTION>
+	<OPTION value="1">1/2</OPTION>
+	<OPTION value="2">1/4</OPTION>
+	<OPTION value="3">1/8</OPTION>
+	</SELECT>
 	<br>
 	<input type="text" size="20" placeholder="Xclean" name="Xclean" id="XCln" onkeyup="changeguide(this.value);" /> <br>
 	<input type="text" size="20" placeholder="Clean" name="Clean" id="Cln" onkeyup="changeguide(this.value);" /> <br>
