@@ -395,16 +395,16 @@ var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
 if (blvl == 1){
-	document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl + xclnbk;
+	document.getElementById("Guidance").value = ((xclnbk - clnbk) * rlvl) + xclnbk;
 	}
 if (blvl == 2){
-	document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl + clnbk;
+	document.getElementById("Guidance").value = ((xclnbk - clnbk) * rlvl) + clnbk;
 	}
 if (blvl == 3){
-	document.getElementById("Guidance").value = (clnbk - abk) * rlvl + abk;
+	document.getElementById("Guidance").value = ((clnbk - abk) * rlvl) + abk;
 	}
 if (blvl == 4){
-	document.getElementById("Guidance").value = (abk - rbk) * rlvl + rbk;
+	document.getElementById("Guidance").value = ((abk - rbk) * rlvl) + rbk;
 	}	
 }
 function carmax() {
