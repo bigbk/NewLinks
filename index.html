@@ -393,7 +393,7 @@ var abk = document.getElementById("Avg").value;
 var rbk = document.getElementById("Rgh").value;
 var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
-document.getElementById("Guidance").value = xclnbk - clnbk;
+document.getElementById("Guidance").value = (xclnbk - clnbk) * rlvl;
 }
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
