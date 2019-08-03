@@ -127,6 +127,7 @@
 	<OPTION value="11">1/5</OPTION>
 	<OPTION value="12">1/10</OPTION>
 	</SELECT>
+		
 	<a> above </a>
 	<SELECT name="booklevel" id="Blevel" onchange="changeguide(this.value);">
 	<OPTION selected value="blank">Choose Book</OPTION>
@@ -135,6 +136,7 @@
 	<OPTION value="3">Average</OPTION>
 	<OPTION value="4">Rough</OPTION>
 	</SELECT>
+		
 	<br>
 	<input type="text" size="20" placeholder="Xclean" name="Xclean" id="XCln" onkeyup="changeguide(this.value);" /> <br>
 	<input type="text" size="20" placeholder="Clean" name="Clean" id="Cln" onkeyup="changeguide(this.value);" /> <br>
@@ -390,7 +392,7 @@ var clnbk = document.getElementById("Cln").value;
 var abk = document.getElementById("Avg").value;
 var rbk = document.getElementById("Rgh").value;
 var rlvl = document.getElementById("Rlevel").value;
-var blvl = document.getElementById("BLevel").value;
+var blvl = document.getElementById("Blevel").value;
 document.getElementById("Guidance").value = xclnbk - clnbk;
 }
 function carmax() {
