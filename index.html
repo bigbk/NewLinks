@@ -109,6 +109,17 @@
 	<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D"_blank" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Nissan Search</a><br>
 	<!-- <a href="https://www.carmax.com/sell-my-car/widget/kbb" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> KBB value</a><br> -->
 	<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br></p>
+	
+	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Book Calculator</strong></span><br>
+	<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> NADA Guides</a><br>
+	<input type="text" name="Xclean" id="XCln" onkeyup="changeguide(this.value);" >
+	<input type="text" name="Clean" id="Cln" onkeyup="changeguide(this.value);" >
+	<input type="text" name="Average" id="Avg" onkeyup="changeguide(this.value);" >
+	<input type="text" name="Rough" id="Rgh" onkeyup="changeguide(this.value);" >
+	<input type="number" name="Guidance" id="Guidance" />
+
+	<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br></p>
+	
 	</div>
   </div>
 	
@@ -349,6 +360,11 @@
 
 <script>
 <!-- https://obw.carmax.com/api/v1/blackbook/BlackBookPdfSpecs/VINNUMBER gives FullUvc, use that to https://obw.carmax.com/api/v1/blackbook/BlackBookPdfSpec/FULLUVC get invoice guide also book values by https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/VINNUMBER-->
+function changeguide(gdnc) {
+var xclnbk = document.getElementById("XCln").value;
+var clnbk = document.getElementById("Cln").value;
+document.getElementById("Guidance").value = xclnbk - clnbk;
+}
 function carmax() {
 	var inputvalue = document.getElementById("VIN").value;
 <!--	inputvalue = "1C3CCCAB1GN121627" -->
