@@ -390,7 +390,14 @@ function changeguide(gdnc) {
 var xclnbk = document.getElementById("XCln").value;
 var clnbk = document.getElementById("Cln").value;
 var abk = document.getElementById("Avg").value;
+	if (abk == 0){
+	var abk = (clnbk*1 - (xclnbk - clnbk));
+	}
 var rbk = document.getElementById("Rgh").value;
+	if (rbk == 0){
+	var rbk = (abk*1 - (clnbk - abk));
+	}
+	
 var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
