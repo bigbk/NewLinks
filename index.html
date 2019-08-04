@@ -386,6 +386,7 @@
 
 <script>
 <!-- https://obw.carmax.com/api/v1/blackbook/BlackBookPdfSpecs/VINNUMBER gives FullUvc, use that to https://obw.carmax.com/api/v1/blackbook/BlackBookPdfSpec/FULLUVC get invoice guide also book values by https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/VINNUMBER-->
+
 function changeguide(gdnc) {
 var xclnbk = document.getElementById("XCln").value;
 var clnbk = document.getElementById("Cln").value;
@@ -393,9 +394,7 @@ var abk = document.getElementById("Avg").value;
 	if (abk == 0){
 	var abk = (clnbk*1 - (xclnbk - clnbk));
 	}
-	if (xclnbk == 0){
-	var abk = (clnbk*1 + (clnbk - abk));
-	}
+
 var rbk = document.getElementById("Rgh").value;
 	if (rbk == 0){
 	var rbk = (abk*1 - (clnbk - abk));
@@ -405,6 +404,9 @@ var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
 if (blvl == 1){
+	if (xclnbk == 0){
+	var abk = (clnbk*1 + (clnbk - abk));
+	}
 	var zguide = (((xclnbk - clnbk) * rlvl) + xclnbk*1);
 	}
 if (blvl == 2){
