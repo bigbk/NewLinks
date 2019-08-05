@@ -12,8 +12,6 @@
 </head>
 
 <body style="background-color:#77c2e6; font-family: Roboto,Verdana,Arial,sans-serif;">
-<p></p>
-	
 <div class="container-fluid" align="center" "style="background-color:#003366;">
   <div class="row" align="left"	 style="background-color:#fff; max-width: 99%;">
 	<p align="left" style="background-color:#003366;"><input size="25" placeholder="Enter VIN" id="VIN" type="text"></p>	
@@ -56,9 +54,8 @@
 	<a id="manheimmzbutton" class="btn btn-link" title="Log in to Manheim to complete inventory search" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="manheimsearch()"><span class="glyphicon glyphicon-edit"></span> Mazda (Click on WS) </a><br></p>
 	
 </div>
-<p></p>
-    <div class="col-md-4">
-	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>VIN Decoders and Research</strong></span><br>
+<div class="col-md-4">
+  <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>VIN Decoders and Research</strong></span><br>
 	<a href="http://www.blackbookusa.com/bb/products/usedcarhtmlportal.asp?color=d&companyid=cudirect.com" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook Online</a><br>
 	<a href="http://www.auto-brochures.com" target="_blank" class="btn btn-link" title="Factory Brochures" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Auto Brochures</a><br>
 	<a href="http://www.motortrend.com/cars/" target="_blank" class="btn btn-link" title="Great resource for BMW or MINI packages" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Motor Trend for Packages</a><br>
@@ -88,9 +85,8 @@
 	<a href="https://www.autoevolution.com/mini/" target="_blank" class="btn btn-link" title="MINI Production Models" style="cursor:pointer;border-style:none;background:#ffffff;">MINI Production Models</a><br>
 	<span> <align="left"><input size="4" placeholder="Year" id="year" type="text"><input size="12" placeholder="Model" id="model" type="text"> </span><a id="chr" class="btn btn-link" title="This will open Google Search" style="cursor:pointer;border-style:none;" onclick="miniog()"> MINI Guide Search</a><br></p>
 </div>
-<p></p>
-    <div class="col-md-4">
-	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Trim Level Help</strong></span><br>
+<div class="col-md-4">
+  <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Trim Level Help</strong></span><br>
 	<a id="hondabutton" class="btn btn-link" title="Requires Honda Owner Account. jasib123 sl.." style="cursor:pointer;border-style:none;background:#ffffff;" onclick="honda()"><span class="glyphicon glyphicon-edit"></span> Honda NAV/RES Specific Trim (login)</a><br>
 	<a href="https://autoservice.hyundaiusa.com/campaignhome" target="_blank" class="btn btn-link" title="Recall page showing trim. Enter VIN and Captcha verification" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Hyundai Trim Level</a><br>
 	<a id="infinitibutton" class="btn btn-link" title="This will pull recall page showing Trim level. Use caution how we option these in store." style="cursor:pointer;border-style:none;background:#ffffff;" onclick="infiniti()"><span class="glyphicon glyphicon-edit"></span> Infiniti Trim Level</a><br>
@@ -111,7 +107,8 @@
 	<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br></p>
 	
 	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Book Calculator</strong></span><br>
-	<a>Calculated Guidance: </a> <input type="Text" name="Guidance" id="Guidance" /> <br>
+	<a>Calculated Guidance: </a> <input type="Text" size="20" name="Guidance" id="Guidance" /> <br>
+	<p></p>
 	<a>Needle is </a><SELECT name="ratiolevel" id="Rlevel" onchange="changeguide(this.value);">
 	<OPTION selected value="0">Right at</OPTION>
 	<OPTION value="1">1 above</OPTION>
@@ -137,7 +134,7 @@
 	<OPTION value="4">Rough</OPTION>
 	</SELECT>
 		
-	<br>
+	<br><p></p>
 	<input type="text" size="20" placeholder="Xclean" name="Xclean" id="XCln" onkeyup="changeguide(this.value);" /> <br>
 	<input type="text" size="20" placeholder="Clean" name="Clean" id="Cln" onkeyup="changeguide(this.value);" /> <br>
 	<input type="text" size="20" placeholder="Average" name="Average" id="Avg" onkeyup="changeguide(this.value);" /> <br>
@@ -148,19 +145,14 @@
 	
 	</div>
   </div>
-	
-<p></p>
-
-  <div class="row" align="left"	style="background-color:#fff; max-width: 99%;">
-<p></p>
-    <div class="col-md-4">
-	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Tow Hitch Info</strong></span><br>
+<div class="row" align="left"	style="background-color:#fff; max-width: 99%;">
+<div class="col-md-4">
+  <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Tow Hitch Info</strong></span><br>
 	<a href="https://www.etrailer.com/fitguide.htm" target="_blank" class="btn btn-link"  title="Enter vehicle year/make/model" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> e-Trailer</a><br>
 	<a href="https://www.uhaul.com/Trailer-Hitches/" target="_blank" class="btn btn-link"  title="Enter vehicle year/make/model" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> UHaul</a><br></p>
 	</div>
-<p></p>
-    <div class="col-md-4">
-	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Additional Links</strong></span><br>
+<div class="col-md-4">
+  <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Additional Links</strong></span><br>
 	<a href="https://mic.mymitchell.com/" target="_blank" class="btn btn-link" title="Login and then parts information" style="cursor:pointer;border-style:none;background:#ffffff;"  ><span class="glyphicon glyphicon-share"></span> Mitchell Repair Guide (PY kmxXXXX)</a><br>
 	<a href="http://www.owgonline.com/index.php" target="_blank" class="btn btn-link" title="Power train/Factory Warranty" style="cursor:pointer;border-style:none;background:#ffffff;"  ><span class="glyphicon glyphicon-share"></span> Official Warranty Guide (Intranet Only)</a><br>
 	<a href="https://repairpal.com/estimator?trk_loc=nav" target="_blank" class="btn btn-link" title="RepairPal" style="cursor:pointer;border-style:none;background:#ffffff;"  ><span class="glyphicon glyphicon-share"></span> RepairPal for estimates</a><br>
@@ -169,9 +161,8 @@
 	<a href="https://www.carmax.com/search/new-car-pricing"  target="_blank" class="btn btn-link" style="cursor:pointer;border-style:none;background:#ffffff;"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </a><br></p>
 	
 	</div>
-<p></p>
-    <div class="col-md-4" >
-	<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Auction Links</strong></span><br>
+<div class="col-md-4" >
+  <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Auction Links</strong></span><br>
 	<a id="mmrbutton" class="btn btn-link" title="MMR Search" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="manheimmmr()"><span class="glyphicon glyphicon-edit"></span> MMR Search</a><br>
 	<a id="manheimbutton" class="btn btn-link" title="Log in to Manheim to complete inventory search" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="manheimsearch()"><span class="glyphicon glyphicon-edit"></span> Manheim Inventory &amp; CR </a><br>
 	<a href="http://www.bscamerica.com/bel-air-auction/run-list/#/" target="_blank" class="btn btn-link" title="Bel Air Auction Run List" style="cursor:pointer;border-style:none;background:#ffffff;"  ><span class="glyphicon glyphicon-share"></span> Bel Air Auto Auction Run List</a><br>
@@ -182,7 +173,7 @@
 	<a href="https://www.smartauctioninspections.com/viw/aspx/general/DealerInspectionReport.aspx" target="_blank" class="btn btn-link" title="Manheim Simulcast" style="cursor:pointer;border-style:none;background:#ffffff;"  ><span class="glyphicon glyphicon-share"></span> SmartAuction Inspections</a><br></p>
 	</div>
 
-  </div>
+</div>
 
   <div class="row" align="left"	style="background-color:#fff; max-width: 99%;">
     <div class="col-md-4" >
@@ -192,14 +183,11 @@
     <div class="col-md-4" >
 	</div>
   </div>
-
-<p></p>
-
-  <div class="row" align="center" style="background-color:#fff; max-width: 99%;">
+<div class="row" align="center" style="background-color:#fff; max-width: 99%;">
     <div class="col" >
 
 <p align="center" style="background-color:#003366;color:#fff;">OWNER'S MANUALS </P>
-<p><table class="tg" align="center">
+<table class="tg" align="center">
   <tr>
 	  <th><font color="white">Manufacturer</font></th>
 	  <th><font color="white">&nbsp;&nbsp;Notes</font></th>
@@ -1098,6 +1086,5 @@ function bmwlane() {
 }
 }
 </script>
-<p></p>										  
 </body>
 </html>
