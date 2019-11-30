@@ -147,6 +147,8 @@
 	<a href="https://bigbk.github.io/NewLinks/pdf.html" target="_blank" class="btn btn-link"  title="Save file to device, then go here" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> PDF Reader Page</a><br>
 	<a>Calculated Guidance: </a> <input type="Text" size="20" name="Guidance" id="Guidance" /> <br>
 	<p></p>
+	<div id="progress"></div><div class="application-progress"></div>
+	
 	<a>Needle is </a><SELECT name="ratiolevel" id="Rlevel" onchange="changeguide(this.value);">
 	<OPTION selected value="0">Right at</OPTION>
 	<OPTION value="1">1 above</OPTION>
@@ -1145,6 +1147,17 @@ function bmwlane() {
 }
 }
 }
+	
+	$('.application-progress').slider({
+    	range: "min",
+    	min: 0,
+    	max: 100,
+    	animate: true,
+    	slide: function(event, ui) {
+        $("#progress").html(ui.value + "%");
+   	 }
+	});
+	
 </script>
 </body>
 </html>
