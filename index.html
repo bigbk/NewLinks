@@ -1,7 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
+	
+	$('.application-progress').slider({
+    	range: "min",
+    	min: 0,
+    	max: 100,
+    	animate: true,
+    	slide: function(event, ui) {
+        $("#progress").html(ui.value + "%");
+   	 }
+	});
+	
 <head>
   <title>Research Links</title>
   <meta charset="utf-8">
@@ -1148,15 +1158,7 @@ function bmwlane() {
 }
 }
 	
-	$('.application-progress').slider({
-    	range: "min",
-    	min: 0,
-    	max: 100,
-    	animate: true,
-    	slide: function(event, ui) {
-        $("#progress").html(ui.value + "%");
-   	 }
-	});
+
 	
 </script>
 </body>
