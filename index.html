@@ -149,7 +149,7 @@
 	<a>Calculated Guidance: </a> <input type="Text" size="20" name="Guidance" id="Guidance" /> <br>
 	<p></p>
 	
-	<div id="progress"></div><div class="application-progress"></div>
+	
 	
 	<a>Needle is </a><SELECT name="ratiolevel" id="Rlevel" onchange="changeguide(this.value);">
 	<OPTION selected value="0">Right at</OPTION>
@@ -1151,17 +1151,7 @@ function bmwlane() {
 }
 </script>
 
-<script>	
-	$('.application-progress').slider({
-    	range: "min",
-    	min: 0,
-    	max: 100,
-    	animate: true,
-    	slide: function(event, ui) {
-        $("#progress").html(ui.value + "%");
-   	 }
-	});
-</script>	
+	
 
 </body>
 </html>
