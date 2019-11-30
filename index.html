@@ -168,7 +168,7 @@
 	<p></p>
 	
      
-  <form oninput="output.value = Math.round(range.valueAsNumber / 1)">
+  <form oninput="changeguide(range.valueAsNumber / 100);">
 
     <div class="range">
       <input name="range" type="range" min="0" max="100">
@@ -456,6 +456,8 @@ var rbk = document.getElementById("Rgh").value;
 var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
+output.value = Math.round(range.valueAsNumber / 1)
+	
 if (blvl == 1){
 	if (xclnbk == 0){
 	var abk = (clnbk*2 - abk) ;
