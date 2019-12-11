@@ -182,9 +182,9 @@
   <form oninput="changeguide(range.valueAsNumber);">
 
     <div class="range">
-      <input name="range" type="range" min="0" max="100">
+      <input name="range" id="range" type="range" min="0" max="100">
       <div class="range-output">
-        <output class="output" name="output" for="range">
+        <output class="output" name="output" id="output" for="range">
           50
         </output>
       </div>
@@ -468,11 +468,11 @@ var rbk = document.getElementById("Rgh").value;
 var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
-// var pcg = document.getElementByID("range").valueAsNumber;
+var pcg = document.getElementByID("range").valueAsNumber;
 	
-	alert(gdnc);
+	alert(pcg);
 	
-document.getElementByID("output").value = gdnc; //Math.round(gdnc / 100)
+document.getElementById("output").value = gdnc; //Math.round(gdnc / 100)
 	
 if (blvl == 1){
 	if (xclnbk == 0){
