@@ -211,10 +211,10 @@
 	
 	<SELECT name="booklevel" id="Blevel" onchange="changeguide(this.value);">
 	<OPTION selected value="blank">Choose Book</OPTION>
-	<OPTION value="1">XClean</OPTION>
-	<OPTION value="2">Clean</OPTION>
-	<OPTION value="3">Average</OPTION>
-	<OPTION value="4">Rough</OPTION>
+	<OPTION value="1">Above XClean</OPTION>
+	<OPTION value="2">Clean and XClean</OPTION>
+	<OPTION value="3">Average and Clean</OPTION>
+	<OPTION value="4">Rough and Average</OPTION>
 	</SELECT>
 		
 	<br><p></p>
@@ -473,7 +473,7 @@ var blvl = document.getElementById("Blevel").value;
 var pcg = gdnc / 100;
 	
 document.getElementById("Guidance").value = gdnc;
-document.getElementById("output").value = gdnc; //Math.round(gdnc / 100)
+document.getElementById("output").value = (gdnc + "%"); //Math.round(gdnc / 100)
 	
 if (blvl == 1){
 	if (xclnbk == 0){
