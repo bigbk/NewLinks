@@ -185,7 +185,7 @@
       <input name="range" id="range" type="range" min="0" max="100">
       <div class="range-output">
         <output class="output" name="output" id="output" for="range">
-          50
+          50%
         </output>
       </div>
     </div>
@@ -468,9 +468,9 @@ var rbk = document.getElementById("Rgh").value;
 //var rlvl = document.getElementById("Rlevel").value;
 var blvl = document.getElementById("Blevel").value;
 
-//var pcg = document.getElementByID("range").value; //valueAsNumber;
+var pcg = document.getElementById("range").valueAsNumber; //valueAsNumber;
 	
-var pcg = gdnc / 100;
+//var pcg = gdnc / 100;
 	
 document.getElementById("Guidance").value = gdnc;
 document.getElementById("output").value = (gdnc + "%"); //Math.round(gdnc / 100)
