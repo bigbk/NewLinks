@@ -470,7 +470,7 @@ var blvl = document.getElementById("Blevel").value;
 
 //var pcg = document.getElementByID("range").value; //valueAsNumber;
 	
-	alert("test");
+
 document.getElementById("Guidance").value = gdnc;
 document.getElementById("output").value = gdnc; //Math.round(gdnc / 100)
 	
@@ -478,16 +478,16 @@ if (blvl == 1){
 	if (xclnbk == 0){
 	var abk = (clnbk*2 - abk) ;
 	}
-	var zguide = (((xclnbk - clnbk) * rlvl) + xclnbk*1);
+	var zguide = (((xclnbk - clnbk) * gdnc) + xclnbk*1); //rlvl changed all to gdnc
 	}
 if (blvl == 2){
-	var zguide = (((xclnbk - clnbk) * rlvl) + clnbk*1);
+	var zguide = (((xclnbk - clnbk) * gdnc) + clnbk*1);
 	}
 if (blvl == 3){
-	var zguide = (((clnbk - abk) * rlvl) + abk*1);
+	var zguide = (((clnbk - abk) * gdnc) + abk*1);
 	}
 if (blvl == 4){
-	var zguide = (((abk - rbk) * rlvl) + rbk*1);
+	var zguide = (((abk - rbk) * gdnc) + rbk*1);
 	}	
 document.getElementById("Guidance").value = zguide;
 }
