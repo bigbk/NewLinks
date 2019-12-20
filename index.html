@@ -211,10 +211,10 @@
 	
 	<a>Needle is between</a><SELECT name="booklevel" id="Blevel" onchange="changeguide(this.value);">
 	<OPTION selected value="blank">Choose Book</OPTION>
-	<OPTION value="1">XClean and Above</OPTION>
-	<OPTION value="2">Clean and XClean</OPTION>
-	<OPTION value="3">Average and Clean</OPTION>
-	<OPTION value="4">Rough and Average</OPTION>
+	<OPTION value="1">XXClean and XClean</OPTION>
+	<OPTION value="2">XClean and Clean</OPTION>
+	<OPTION value="3">Clean and Average</OPTION>
+	<OPTION value="4">Average and Rough</OPTION>
 	</SELECT>
 		
 	<br><p></p>
@@ -469,7 +469,7 @@ var rbk = document.getElementById("Rgh").value;
 var blvl = document.getElementById("Blevel").value;
 
 var pcg = document.getElementById("range").valueAsNumber / 100; //valueAsNumber;
-	
+	pcg = 1 - pcg;
 //var pcg = gdnc / 100;
 	
 document.getElementById("Guidance").value = pcg;
