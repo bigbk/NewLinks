@@ -473,7 +473,7 @@ var pcg = document.getElementById("range").valueAsNumber / 100; //valueAsNumber;
 //var pcg = gdnc / 100;
 	
 document.getElementById("Guidance").value = pcg;
-document.getElementById("output").value = ((pcg * 100) + "%"); //Math.round(gdnc / 100)
+document.getElementById("output").value = ((pcg.toFixed(2) * 100) + "%"); //Math.round(gdnc / 100)
 	
 if (blvl == 1){
 	if (xclnbk == 0){
