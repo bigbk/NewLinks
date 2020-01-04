@@ -20,6 +20,13 @@ input {width: 200px;}
     <tr>
       <td align="center">
         <input type="text" id="b12" placeholder="VIN - 17 Digits" name="name" maxlength="100">
+ 
+      <div>
+        <output name="output" id="output">
+          
+        </output>
+      </div>
+
       </td>
     </tr>
     <tr>
@@ -37,30 +44,86 @@ input {width: 200px;}
 
 
 <script>
-
 document.getElementById("btn_submit").onclick = function () {
   var vin;
-
   vin = document.getElementById("b12").value;
-
   if (vin.length === 17) {
     getNHTSADataByVIN(vin);
-  }
+  } else {
+       alert("VIN number should be 17 digits long, currently " + vin.length + " digits entered.");
+}
+
 };
+
 
 function getNHTSADataByVIN (param_vin) {
   $.ajax({
     url: "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/",
-    //url: "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVin/",
+    //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
     data: { format: "json", data: param_vin },
     dataType: "json",
     success: function(result)
     {
       console.log(result);
-      //alert(result.Results);
-      //alert(result.Results[14]);
-      //alert("Make: " + result.Results.DecodedVINValues.Make);
+
+  //alert("Make: " + result.Results[0].Make);
+
+	if ( result.Results[0].ModelYear !== "")  { 
+		aYear = result.Results[0].ModelYear
+	} else {
+		aYear = ""
+	};
+	if ( result.Results[0].Make !== "")  { 
+		aMake = " " + result.Results[0].Make 
+	} else {
+		aMake = ""
+	};
+	if ( result.Results[0].Model !== "")  { 
+		aModel = " " + result.Results[0].Model 
+	} else {
+		aModel = ""
+	};
+	if ( result.Results[0].Trim!== "")  { 
+		aTrim = " " + result.Results[0].Trim
+	} else {
+		aTrim = ""
+	};
+	if ( result.Results[0].DisplacementL !== "")  { 
+		aDisp = ", " + result.Results[0].DisplacementL + "L"
+	} else {
+		aDisp = ""
+	};
+	if ( result.Results[0].EngineCylinders !== "")  { 
+		aCyl = ", " + result.Results[0].EngineCylinders + "cyl"
+	} else {
+		aCyl = ""
+	};
+	if ( result.Results[0].DriveType !== "")  { 
+		aDrive = ", " + result.Results[0].DriveType
+	} else {
+		aDrive= ""
+	};
+	if ( result.Results[0].Doors !== "")  { 
+		aDoor = ", " + result.Results[0].Doors + "D"
+	} else {
+		aDoor= ""
+	};
+	if ( result.Results[0].BodyCabType !== "")  { 
+		aCab = ", " + result.Results[0].BodyCabType
+	} else {
+		aCab = ""
+	};
+	if ( result.Results[0].BodyClass !== "")  { 
+		aBody = ", " + result.Results[0].BodyClass
+	} else {
+		aBody= ""
+	};
+
+ 	
+	document.getElementById("output").innerText = aYear + aMake + aModel + aTrim + aDisp + aCyl + aDrive  + " \n " + aDoor + aCab + aBody + " \r\n ";;
+	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
+
       displayNHTSAResults(result);
     },
     error: function(xhr, ajaxOptions, thrownError)
@@ -70,23 +133,18 @@ function getNHTSADataByVIN (param_vin) {
     }
   });
 };
-
 function displayNHTSAResults (param_data) {
   var output_text = "";
-
   for (var i = 0; i < param_data.Results.length; i++) {
     var result = param_data.Results[i];
-
     for (var prop in result) {
       if (result.hasOwnProperty(prop) && result[prop] !== "") {
         output_text += prop + ": " + result[prop] + "\n";
       }
     }
   }
-
   document.getElementById("txt_results").value = output_text;
 };
-
 </script>
                                                 
 </body>
