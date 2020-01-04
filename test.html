@@ -58,7 +58,8 @@ function getNHTSADataByVIN (param_vin) {
     success: function(result)
     {
       console.log(result);
-      displayNHTSAResults("Make: " + result.DecodedVINValues.Make);
+      alert("Make: " + result.DecodedVINValues.Make);
+      displayNHTSAResults(result);
     },
     error: function(xhr, ajaxOptions, thrownError)
     {
