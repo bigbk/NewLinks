@@ -30,7 +30,7 @@ input {width: 200px;}
     </tr>
     <tr>
       <td>
-        <textarea id="txt_results" rows="15" cols="100" placeholder="Vehicle Data Presented Here"></textarea>
+        <textarea id="txt_results" rows="15" cols="100" placeholder="OBW Vehicle Data Presented Here"></textarea>
       </td>
     </tr>
   </table>
@@ -50,7 +50,8 @@ document.getElementById("btn_submit").onclick = function () {
 
 function getNHTSADataByVIN (param_vin) {
   $.ajax({
-    url: "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/",
+    //url: "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/",
+    url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
     data: { format: "json", data: param_vin },
     dataType: "json",
