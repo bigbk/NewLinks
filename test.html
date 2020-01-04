@@ -58,7 +58,7 @@ function getNHTSADataByVIN (param_vin) {
     success: function(result)
     {
       console.log(result);
-      displayNHTSAResults(result);
+      displayNHTSAResults("Make: " + result.make);
     },
     error: function(xhr, ajaxOptions, thrownError)
     {
