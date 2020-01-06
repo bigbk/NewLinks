@@ -40,6 +40,10 @@
 		<div id="nhtsa_data" style="display:none; background-color:#003366;">
         <textarea id="txt_results" rows="15" cols="100" placeholder="Vehicle Data Presented Here"></textarea>
 		</div>
+	
+		<div id="chrysler_div" style="display:none; background-color:#003366;">
+        <a id="chr" class="btn btn-link" title="This will open PDF window sticker" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="chrysler()"><span class="glyphicon glyphicon-edit"></span> Dodge/Chrysler/Jeep/Fiat/Alfa Romeo</a><br>
+		</div>
 		
 	</div>
 			
@@ -48,6 +52,10 @@
 
 <script>
 	var vin;
+	var aYear;
+	var aMake;
+	var aModel;
+	
 document.getElementById("btn_submit").onclick = function () {
   //var vin;
   vin = document.getElementById("b12").value;
@@ -164,6 +172,15 @@ function displayNHTSAResults (param_data) {
 	document.getElementById("nhtsa_data").style.display = 'block';
 
 };
+	
+function updatedisplay ( ) {
+	document.getElementById("chrysler_div").style.display = 'block';
+};
+
+	function chrysler() {
+	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin="+vin);
+	};
+	
 </script>
 	
 </body>
