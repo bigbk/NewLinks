@@ -1,54 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-<title>VIN Decoder API Test</title>
+<meta charset="utf-8">
+	
+<title>VIN Search</title>
 
 <style type="text/css">
-input {width: 200px;}
+	input {width: 200px;}
+	body {background-color:#77c2e6; font-family: Roboto,Verdana,Arial,sans-serif;}
+	div {class: row; align: left; max-width: 99%;}
+	p {align: left; background-color:#003366;}
+	a {cursor: pointer; border-style: none; background:#ffffff;}
+	@import url("https://github.com/bigbk/NewLinks/blob/master/test.css");
+	@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 </style>
-
+	
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<script type="text/javascript">
-</script>
+<script type="text/javascript"></script>
 
 </head>
 
+	
 <body>
-  <table align="center">
-    <tr>
-      <td align="center">
-        <input type="text" id="b12" placeholder="VIN - 17 Digits" name="name" maxlength="100">
- 
-      <div>
-        <output name="output" id="output">
-          
-        </output>
-      </div>
+	<div class="container-fluid" align="center" "style="background-color:#003366;">
+		<div align="center" "style="background-color:#003366;">
+			<input type="text" id="b12" placeholder="VIN - 17 Digits" name="name" maxlength="100">
+			<button id="btn_submit">Submit</button>
+			
+			<div>
+				<output name="output" id="output">
+				
+				</output>
+			</div>
 
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <button id="btn_submit">Submit</button>
-        
-      </td>
-    </tr>
-    <tr>
-      <td>
+		</div>
+
+		<div id="nhtsa_data" style="display:none; background-color:#003366;">
         <textarea id="txt_results" rows="15" cols="100" placeholder="Vehicle Data Presented Here"></textarea>
-      </td>
-    </tr>
-  </table>
+		</div>
+		
+	</div>
+			
+
 
 
 <script>
+	var vin;
 document.getElementById("btn_submit").onclick = function () {
-  var vin;
+  //var vin;
   vin = document.getElementById("b12").value;
+	vin = vin.replace(/ +/g, "");					      
+	if (vin[0] == '{') {
+	vin = vin.slice(1,-1);
+	}
+	vin = vin.toUpperCase();
+	document.getElementById("b12").value = vin;
   if (vin.length === 17) {
-    getNHTSADataByVIN(vin);
+	  getNHTSADataByVIN(vin);
   } else {
        alert("VIN number should be 17 digits long, currently " + vin.length + " digits entered.");
 }
@@ -133,19 +143,28 @@ function getNHTSADataByVIN (param_vin) {
     }
   });
 };
+	
 function displayNHTSAResults (param_data) {
-  var output_text = "";
-  for (var i = 0; i < param_data.Results.length; i++) {
-    var result = param_data.Results[i];
-    for (var prop in result) {
-      if (result.hasOwnProperty(prop) && result[prop] !== "") {
-        output_text += prop + ": " + result[prop] + "\n";
-      }
-    }
-  }
-  document.getElementById("txt_results").value = output_text;
+	var output_text = "";
+	for (var i = 0; i < param_data.Results.length; i++) {
+		var result = param_data.Results[i];
+		for (var prop in result) {
+			if (result.hasOwnProperty(prop) && result[prop] !== "") {
+				output_text += prop + ": " + result[prop] + "\n";
+			}
+		}
+	}
+	document.getElementById("txt_results").value = output_text;
+	
+	//var e = document.getElementById("nhtsa_data");
+    //e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+	
+	//document.getElementById("nhtsa_data").style.display = (document.getElementById("nhtsa_data").style.display == 'block') ? 'none' : 'block';
+	
+	document.getElementById("nhtsa_data").style.display = 'block';
+
 };
 </script>
-                                                
+	
 </body>
 </html>
