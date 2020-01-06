@@ -170,6 +170,8 @@ function displayNHTSAResults (param_data) {
 	//document.getElementById("nhtsa_data").style.display = (document.getElementById("nhtsa_data").style.display == 'block') ? 'none' : 'block';
 	
 	document.getElementById("nhtsa_data").style.display = 'block';
+	updatedisplay ();
+	
 
 };
 	
@@ -177,9 +179,9 @@ function updatedisplay ( ) {
 	document.getElementById("chrysler_div").style.display = 'block';
 };
 
-	function chrysler() {
+function chrysler() {
 	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin="+vin);
-	};
+};
 	
 </script>
 	
