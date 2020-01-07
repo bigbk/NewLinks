@@ -207,8 +207,7 @@ h1 {
     border-radius: inherit;
 }
 
-.vin {
-    &-check {
+
         .title {
             h1 {
                 letter-spacing: 3.6px;
@@ -239,8 +238,6 @@ h1 {
                     width: calc(100% + 3px);
                     z-index: -1;
                 }
-            }
-        }
 
         /* CALL TO ACTION */
         .cta-text {
