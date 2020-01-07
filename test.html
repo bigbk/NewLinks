@@ -42,7 +42,26 @@
 	.special-decoration {
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, 0.8) 95%, white 98%, white 100%);
         }
-  	
+	h1 {
+	        .special-decoration {
+                display: inline-flex;
+                position: relative;
+                color: white;
+                padding-left: 7px;
+                margin-left: -7px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: $base-blue;
+                    top: 0;
+                    left: -10px;
+                    height: 99%;
+                    width: calc(100% + 3px);
+                    z-index: -1;
+                }
+            }
+	}
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
