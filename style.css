@@ -115,7 +115,7 @@ hr {
 }
 
 .font18 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .scrollDown {
@@ -136,12 +136,6 @@ hr {
     color: inherit;
 }
 
-.vin-check {
-    position: relative;
-    // margin-bottom: 90px;
-
-    //min-height: 1335px;
-}
 
 .vin-btn {
     height: 40px;
@@ -182,7 +176,7 @@ hr {
 
 h1 {
     margin: 0;
-    font-size: 5em;
+    font-size: 3em;
 }
 
 /* .redBtn {
