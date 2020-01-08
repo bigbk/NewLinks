@@ -180,6 +180,11 @@ function getNHTSADataByVIN (param_vin) {
 	} else {
 		aModel = ""
 	};
+	if ( result.Results[0].Series !== "")  { 
+		aSeries = result.Results[0].ModelYear
+	} else {
+		aSeries = ""
+	};
 	if ( result.Results[0].Trim!== "")  { 
 		aTrim = result.Results[0].Trim
 	} else {
@@ -217,7 +222,7 @@ function getNHTSADataByVIN (param_vin) {
 	};
 
  	
-	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
+	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aSeries + " " aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
 	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
 	
 	//autobrochures(aMake);    
