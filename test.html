@@ -203,7 +203,8 @@ function getNHTSADataByVIN (param_vin) {
  	
 	document.getElementById("output").innerText = aYear + aMake + aModel + aTrim + aDisp + aCyl + aDrive  + " \n " + aDoor + aCab + aBody + " \r\n ";;
 	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
-
+	
+	autobrochures(aMake);    
       displayNHTSAResults(result);
     },
     error: function(xhr, ajaxOptions, thrownError)
@@ -216,7 +217,7 @@ function getNHTSADataByVIN (param_vin) {
 
 function autobrochures (param_make) {
   $.ajax({
-    url: "http://www.auto-brochures.com/"+ aMake + "/" ,
+    url: "http://www.auto-brochures.com/"+ param_make + "/" ,
     //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
     data: { format: "html", data: param_make },
