@@ -160,48 +160,48 @@ function getNHTSADataByVIN (param_vin) {
 		aMake = ""
 	};
 	if ( result.Results[0].Model !== "")  { 
-		aModel = " " + result.Results[0].Model 
+		aModel = result.Results[0].Model 
 	} else {
 		aModel = ""
 	};
 	if ( result.Results[0].Trim!== "")  { 
-		aTrim = " " + result.Results[0].Trim
+		aTrim = result.Results[0].Trim
 	} else {
 		aTrim = ""
 	};
 	if ( result.Results[0].DisplacementL !== "")  { 
-		aDisp = ", " + result.Results[0].DisplacementL + "L"
+		aDisp = result.Results[0].DisplacementL + "L"
 	} else {
 		aDisp = ""
 	};
 	if ( result.Results[0].EngineCylinders !== "")  { 
-		aCyl = ", " + result.Results[0].EngineCylinders + "cyl"
+		aCyl = result.Results[0].EngineCylinders + "cyl"
 	} else {
 		aCyl = ""
 	};
 	if ( result.Results[0].DriveType !== "")  { 
-		aDrive = ", " + result.Results[0].DriveType
+		aDrive = result.Results[0].DriveType
 	} else {
 		aDrive= ""
 	};
 	if ( result.Results[0].Doors !== "")  { 
-		aDoor = ", " + result.Results[0].Doors + "D"
+		aDoor = result.Results[0].Doors + "D"
 	} else {
 		aDoor= ""
 	};
 	if ( result.Results[0].BodyCabType !== "")  { 
-		aCab = ", " + result.Results[0].BodyCabType
+		aCab = result.Results[0].BodyCabType
 	} else {
 		aCab = ""
 	};
 	if ( result.Results[0].BodyClass !== "")  { 
-		aBody = ", " + result.Results[0].BodyClass
+		aBody = result.Results[0].BodyClass
 	} else {
 		aBody= ""
 	};
 
  	
-	document.getElementById("output").innerText = aYear + aMake + aModel + aTrim + aDisp + aCyl + aDrive  + " \n " + aDoor + aCab + aBody + " \r\n ";;
+	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aTrim + ", "+ aDisp + "L " + aCyl + "cyl, " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
 	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
 	
 	autobrochures(aMake);    
