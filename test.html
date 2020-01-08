@@ -218,7 +218,7 @@ function getNHTSADataByVIN (param_vin) {
 function autobrochures (param_make) {
 	param_make = param_make.toLowerCase()
   $.ajax({
-    url: "https://www.auto-brochures.com/"+ param_make + ".html/" ,
+    url: "https://www.auto-brochures.com/"+ param_make + ".html" ,
     //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
     data: { format: "text", data: param_make },
