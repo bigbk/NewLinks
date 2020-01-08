@@ -145,6 +145,7 @@ function getNHTSADataByVIN (param_vin) {
     success: function(result)
     {
       console.log(result);
+ 
 
   //alert("Make: " + result.Results[0].Make);
 
@@ -212,6 +213,28 @@ function getNHTSADataByVIN (param_vin) {
     }
   });
 };
+
+function autobrochures (param_make) {
+  $.ajax({
+    url: "http://www.auto-brochures.com/"+ aMake + "/" ,
+    //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
+    type: "POST",
+    data: { format: "html", data: param_make },
+    dataType: "json",
+    success: function(result)
+    {
+      console.log(result);
+ 
+	
+      checkLinks(result, "TL");
+    },
+    error: function(xhr, ajaxOptions, thrownError)
+    {
+        console.log(xhr.status);
+        console.log(thrownError);
+    }
+  });
+};
 	
 function displayNHTSAResults (param_data) {
 	var output_text = "";
@@ -247,6 +270,32 @@ function updatedisplay ( ) {
 function chrysler() {
 	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin="+vin);
 };
+
+function checkLinks( code, searchString )
+{
+
+    var url;
+
+    // We need to create an HTML document element so we can use javascript dom functions on it.
+    var doc = document.createElement("html");
+    doc.innerHTML = code; // put the code into the document
+
+    // Get all  links in the code
+    var links = doc.getElementsByTagName("a")
+
+    // Loop over all links
+    for (var i=0; i<links.length; i++) {
+        // Check if the search string (e.g "google.com") is found in the href of the link
+        if(  links[i].getAttribute("href").indexOf(searchString) != -1 ) {
+            // Set it to the return value
+            url = links[i].getAttribute("href");
+            // stop looping
+            break;
+        }
+    }
+	alert (url);
+    return url;
+}
 	
 </script>
 	
