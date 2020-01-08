@@ -67,7 +67,7 @@
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: right;
+  /*float: right;*/
   width: 200px;
   background: #f1f1f1;
 }
