@@ -23,11 +23,11 @@
 
 
 
-.title {
+
             h1 {
                 letter-spacing: 3.6px;
-                line-height: 56px;
-                margin-left: -5px;
+                line-height: 30px;
+                /*margin-left: -5px;*/
             }
 
             h2 {
@@ -46,7 +46,7 @@
                 &::before {
                     content: '';
                     position: absolute;
-                    background-color: $base-blue;
+                    background-color: #003366;
                     top: 0;
                     left: -10px;
                     height: 99%;
@@ -54,5 +54,3 @@
                     z-index: -1;
                 }
             }
-}
-
