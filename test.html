@@ -11,35 +11,18 @@
 <style type="text/css">
 	input {width: 200px;}
 	/*body {background-color:#77c2e6; font-family: Roboto,Verdana,Arial,sans-serif;}*/
-	
-	.column {
-  	float: left;
-  	padding: 10px;
-	}
-
-	.left, .right {
-  	width: 25%;
-	}
-
-	.middle {
-  	width: 40%;
-	}
-
-/* Clear floats after the columns */
-	.row:after {
-  	content: "";
-  	display: table;
-  	clear: both;
-	}
-	
-
 
 </style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	
+	
+
+<!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chivo:400,700,900|Signika+Negative:300,400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">	 
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -49,28 +32,35 @@
 
 	
 <body style="background-color:#003366;">
+
 	<div class="row" align="center">
 	
-	<div class="row title" align="left"	 style="background-color:#fff; max-width: 99%;">
+	<div class="row" align="left" style="background-color:#fff;">
+		<div class="column left">
+		</div>
+		<div class="column middle">
 		<h1 class="font-weight-bold">
 		<span>VIN</span>
 		<span class="text-primary"> RESEARCH<span class="special-decoration">LINKS</span></span>
 		</h1> </br>
+		</div>
+		<div class="column right">
+		</div>
 	</div>
 	
 	<input type="text" id="b12" placeholder="VIN - 17 Digits" name="name" maxlength="100" style="border-radius: 10px; border: 2px solid #609; padding: 20px; width: 200px; height: 15px;">
 	<button id="btn_submit">Submit</button>
 
-	<div class="row" align="left"	 style="background-color:#fff; max-width: 99%;">
+	<div class="row" align="left"	 style="background-color:#fff;">
 		<div class="column left">
-		
+		test 1
 
 		
 		</div>
 		<div class="column middle">
 				     
 																																			 
-		<div id="chrysler_div" style="display:none; background-color:#fff;">
+		<div id="chrysler_div" style="display:block; background-color:#fff;">
 			<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong> These links work for Chrysler, Jeep, RAM, Fiat, Alfa Romeo</strong></span><br></p>
         	<a id="chr" class="btn btn-link" title="This will open PDF window sticker" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="chrysler()"><span class="glyphicon glyphicon-edit"></span> Window sticker </a> <br>
 			
@@ -82,7 +72,7 @@
 				     test 3
 		</div>
 	</div>
-	<div class="row" align="left"	style="background-color:#fff; max-width: 99%;">
+	<div class="row" align="left"	style="background-color:#fff;">
 		<div class="col-md-4">
 				     test 21
 		</div>
