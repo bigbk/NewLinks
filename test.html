@@ -59,9 +59,9 @@
 
 		
 		</div>
-		<div class="column middle" style="background-color:#77c2e6; width: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center;">
+		<div class="column middle" >
 				     
-			<div>
+			<div style="background-color:#77c2e6; width: 250px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center;">
 				<output name="output" id="output">
 				
 				</output>
@@ -203,7 +203,7 @@ function getNHTSADataByVIN (param_vin) {
 	};
 
  	
-	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aTrim + ", "+ aDisp + "L " + aCyl + "cyl, " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
+	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
 	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
 	
 	autobrochures(aMake);    
