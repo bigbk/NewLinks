@@ -297,6 +297,14 @@ function checkLinks( code, searchString )
 	alert (url);
     return url;
 }
+
+var input13 = document.getElementById("b12");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn_submit").click();
+  }
+});
 	
 </script>
 	
