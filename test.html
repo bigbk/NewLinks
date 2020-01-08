@@ -220,7 +220,7 @@ function autobrochures (param_make) {
     url: "http://www.auto-brochures.com/"+ param_make + "/" ,
     //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
-    data: { format: "html", data: param_make },
+    data: { format: "text", data: param_make },
     dataType: "json",
     success: function(result)
     {
