@@ -72,7 +72,9 @@
 		<div id="chrysler_div" style="display:none; background-color:#fff;">
 			<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong> These links work for Chrysler, Jeep, RAM, Fiat, Alfa Romeo</strong></span><br></p>
         	<!-- <a id="chr" class="btn btn-link" title="This will open PDF window sticker" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="chrysler()"><span class="glyphicon glyphicon-edit"></span> Window sticker </a> <br> -->
-		<button class="linkbutton" type="submit" id="chr" title="This will open PDF window sticker" onclick="chrysler()"> Window Sticker</button>
+		<button class="linkbutton" type="submit" id="chr" title="This will open PDF window sticker" onclick="chrysler()"> Window Sticker</button> Available for newer vehicles <br>
+		<button class="linkbutton" type="submit" id="chrbutton" title="This will open PDF window sticker" onclick="chryslerlist()"> Build Sheet</button> Available for most vehicles <br>
+			
 		</div>
 		
 		</div>
@@ -202,7 +204,7 @@ function getNHTSADataByVIN (param_vin) {
 	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";;
 	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
 	
-	autobrochures(aMake);    
+	//autobrochures(aMake);    
       displayNHTSAResults(result);
     },
     error: function(xhr, ajaxOptions, thrownError)
@@ -271,7 +273,10 @@ function updatedisplay ( ) {
 function chrysler() {
 	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin="+vin);
 };
-
+function chryslerlist() {
+	window.open(" http://www.chrysler.com/webselfservice/BuildSheetServlet?vin="+vin);
+};
+	
 function checkLinks( code, searchString )
 {
 
