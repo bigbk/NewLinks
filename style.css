@@ -1,21 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
 
-	.column {
+	div.column {
   	float: left;
   	padding: 25px;
 	}
 
-	.left, div.right {
+	div.left, div.right {
   	width: 20%;
 	}
 
-	.middle {
+	div.middle {
   	width: 60%;
 	}
 
 /* Clear floats after the columns */
-	row:after {
+	div.row:after {
   	content: "";
   	display: table;
   	clear: both;
