@@ -3,7 +3,7 @@
 
 	div.column {
   	float: left;
-  	padding: 25px;
+  	padding: 1px;
 	}
 
 	div.left, div.right {
@@ -25,19 +25,19 @@
 
 
             h1 {
-                letter-spacing: 3.6px;
+                letter-spacing: 1px;
                 line-height: 30px;
-				font-family: Chivo, sans-serif;
-    			font-weight: 400;
-                /*margin-left: -5px;*/
+		font-family: Chivo, sans-serif;
+    		font-weight: 400;
+                margin-left: -5px;
             }
 
             h2 {
-                line-height: 50px;
+                line-height: 30px;
                 letter-spacing: 1.8px;
                 font-size: 2.5rem;
-				font-family: Chivo, sans-serif;
-    			font-weight: 400;
+		font-family: Chivo, sans-serif;
+    		font-weight: 500;
             }
 
             .special-decoration {
