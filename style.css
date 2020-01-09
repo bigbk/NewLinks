@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-	div.column {
+/*	div.column {
   	float: left;
   	padding: 1px;
 	}
@@ -15,20 +15,20 @@
 	}
 
 /* Clear floats after the columns */
-	div.row:after {
+/*	div.row:after {
   	content: "";
   	display: table;
   	clear: both;
 	}   
 
-
+*/
 
 
             h1 {
                 letter-spacing: 1px;
                 line-height: 30px;
-		font-family: Chivo, sans-serif;
-    		font-weight: 700;
+				font-family: Chivo, sans-serif;
+    			font-weight: 700;
                 margin-left: 5px;
             }
 
@@ -64,12 +64,12 @@
 
 /* Style the search field */
  input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  /*float: right;*/
-  width: 200px;
-  background: #f1f1f1;
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	/*float: right;*/
+	width: 350px;
+	background: #f1f1f1;
 }
 
 /* Style the submit button */
@@ -97,7 +97,7 @@ button:hover {
   color: #003366;
   font-size: 17px;
   border: 1px solid grey;
-  /*border-left: none; /* Prevent double borders */*/
+  /*border-left: none;  Prevent double borders */
   cursor: pointer;
 }
 /* Clear floats */
