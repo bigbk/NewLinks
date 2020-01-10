@@ -13,9 +13,8 @@
 	
 </style>
 
-
 <script type="text/javascript"></script>
-	
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
 	
 <link rel="stylesheet" href="style.css">	
@@ -28,6 +27,8 @@
 	
 <body style="background-color:#003366;">
 
+
+
 <div class="container" style="background-color:#fff;">
   <div class="row">
     <div class="col">
@@ -36,49 +37,60 @@
 		<span style="color:#003366"> RESEARCH<span style="background-color:#003366;" class="special-decoration">LINKS</span></span>
 		</h1>
     </div>
-    <div class="col-8">
+    <div class="col-8" align="right" style="padding-right: 0px;" >
+		<span style="font-size: 2em; color: #ffd51d; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">bigBK;)</span>
       
     </div>
  
   </div>
-	<div class="row" style="background-color:#003366;">
-		<div class="col" align="left">
-			<select name="booklevel" id="Blevel" onchange="changeview(this.value);" align="left">
-			<option selected value="blank">Manual Selection</option>
-			<option value="1">Chrysler/Jeep/Fiat</option>
-			<option value="2">Audi/Volkswagen/Bentley</option>
-			<option value="3">Ford/Lincoln/Mercury</option>
-			<option value="4">Hyundai/Genesis</option>
-			</select>
+	<div class="row" style="padding-left: 0px; background-color:#003366;">
+		<div class="col-3 order-1 order-sm-1" style="padding-left: 0px;">
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" style="background-color:#ffd51d; color:#003366;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manual Selection</button>
+  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    				<a class="dropdown-item" href="#">Chrysler/Jeep/Fiat</a>
+    				<a class="dropdown-item" href="#">Audi/Volkswagen/Bentley</a>
+    				<a class="dropdown-item" href="#">Ford/Lincoln/Mercury</a>	
+    				<a class="dropdown-item" href="#">Hyundai/Genesis</a>
+  				</div>
+			</div>
+
 		</div>
-		
-		<div class="col" align="right">
-			<input name="name" type="text" id="VINbar" placeholder="VIN - 17 Digits" >
-			<button type="submit" id="btn_submit"><i class="fa fa-search"></i></button>
+		 
+		<div class="col-9 order-2 order-sm-2" align="right" style="padding-right: 0px;">
+			<!--<input name="name" type="text" id="VINbar" placeholder="VIN - 17 Digits" >
+			<button class="srch button" type="submit" id="btn_submit"><i class="fa fa-search"></i></button> -->
+			<div class="input-group md-form form-sm form-2 pl-0 w-50">
+				<input name="VIN" id="VINbar" class="form-control my-0 py-1 amber-border" type="text" placeholder="VIN - 17 Digits" aria-label="Search">
+				<div class="input-group-append">
+					<span class="input-group-text amber lighten-3" style="background: #ffd51d;" id="btn_submit"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+				</div>
+			</div>
 		</div>
 		
 	</div>
 	
   <div class="row">
-    <div class="col">
+    <div class="col-md-3 order-md-1 order-3 order-sm-3">
 		
-      <p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Inventory Research</strong></span><br>
-	<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> NADA Guides</a><br>
-	<a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=forSaleTab_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=AUTO&entitySelectingHelper.selectedEntity=&entitySelectingHelper.selectedEntity2=&zip=21162&distance=500&searchChanged=true&modelChanged=true&filtersModified=true" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarGurus Used Car Search</a><br>
-	<a href="https://www.commercialtrucktrader.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Commercial Truck Trader</a><br>
-	<a href="http://www.blvd.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Wheelchair Vans</a><br>
-	<a href="https://www.carmax.com/cars?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search</a><br>
-	<a href="https://websearch-website.carmax.com/cars/all?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search 2</a><br>
-	<a href="https://www.infinitiusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Q60&totalPrice%5B%5D=range%3A50300%2C68575&location%5B%5D=%5B40.1417764%2C-76.38536690000001%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Infiniti Search</a><br>
-	<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Nissan Search </a><br>
+      <p><span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Inventory Research</strong></span><br>
+		<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> NADA Guides</a><br>
+		<a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=forSaleTab_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=AUTO&entitySelectingHelper.selectedEntity=&entitySelectingHelper.selectedEntity2=&zip=21162&distance=500&searchChanged=true&modelChanged=true&filtersModified=true" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarGurus Used Car Search</a><br>
+		<a href="https://www.commercialtrucktrader.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Commercial Truck Trader</a><br>
+		<a href="http://www.blvd.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Wheelchair Vans</a><br>
+		<a href="https://www.carmax.com/cars?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search</a><br>
+		<a href="https://websearch-website.carmax.com/cars/all?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search 2</a><br>
+		<a href="https://www.infinitiusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Q60&totalPrice%5B%5D=range%3A50300%2C68575&location%5B%5D=%5B40.1417764%2C-76.38536690000001%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Infiniti Search</a><br>
+		<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Nissan Search </a><br>
 	
-	<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br></p>
+		<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br>
+	</p>
 	
 
     </div>
 	
-    <div class="col-8">
-    	<div style="margin-top: 20px; margin-bottom: 20px; background-color:#77c2e6; width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); text-align: center;">
+    <div class="col-md-6 order-md-2 order-1 order-sm-1">
+    	<div id="outputbox" class="shadow p-3 rounded-0" style="display:none; margin-top: 20px; margin-bottom: 20px; background-color:#77c2e6; width: 100%; text-align: center;">
 				<output name="output" id="output">
 				
 				</output>
@@ -86,7 +98,6 @@
 			
 		<div id="chrysler_div" style="display:none; background-color:#fff;">
 			<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong> These links work for Chrysler, Jeep, RAM, Fiat, Alfa Romeo</strong></span><br></p>
-        	<!-- <a id="chr" class="btn btn-link" title="This will open PDF window sticker" style="cursor:pointer;border-style:none;background:#ffffff;" onclick="chrysler()"><span class="glyphicon glyphicon-edit"></span> Window sticker </a> <br> -->
 			
 			<p style="line-height:1.5">
 			<button class="linkbutton" type="submit" id="chr" title="This will open PDF window sticker" onclick="chrysler()"> Window Sticker</button> Available for newer vehicles <br>
@@ -97,9 +108,9 @@
 
     </div>
 	
-    <div class="col">
+    <div class="col-md-3 order-md-3 order-2 order-sm-2">
       <p>
-		<span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Blackbook and Research</strong></span><br>
+		<span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Blackbook and Research</strong></span><br>
 		<a href="http://www.blackbookportals.com/bb/products/vinpricingxpresshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook First Values</a><br>
 		<a href="http://www.blackbookusa.com/bb/products/usedcarhtmlportal.asp?color=d&companyid=cudirect.com" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook Used Car</a><br>
 		<a href="http://www.blackbookportals.com/bb/products/newcarhtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook New Car Info </a><br>
@@ -115,14 +126,36 @@
 		</p>	
     </div>
   </div>
-  <div class="row">
-		<div id="nhtsa_data" style="display:none; background-color:#fff;">
-        	<textarea id="txt_results" rows="6" cols="60" placeholder="Vehicle Data Presented Here"></textarea>
+	<div class="row">
+		<div class="col"> 
 		</div>
+		<div class="col-8"> 
+			<div id="nhtsa_data" style="display:none; background-color:#fff;">
+        		<textarea id="txt_results" rows="6" cols="60" placeholder="Vehicle Data Presented Here"></textarea>
+			</div>
+		</div>
+		<div class="col"> 
+		</div>
+		
+
+		
 	</div>
 				  
 </div>
 
+		
+
+
+													       
+
+	
+
+				     
+		
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
 
 
 
@@ -153,7 +186,6 @@ document.getElementById("btn_submit").onclick = function () {
 function getNHTSADataByVIN (param_vin) {
   $.ajax({
     url: "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVINValuesBatch/",
-    //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
     type: "POST",
     data: { format: "json", data: param_vin },
     dataType: "json",
@@ -161,8 +193,6 @@ function getNHTSADataByVIN (param_vin) {
     {
       console.log(result);
  
-
-  //alert("Make: " + result.Results[0].Make);
 
 	if ( result.Results[0].ModelYear !== "")  { 
 		aYear = result.Results[0].ModelYear
@@ -222,10 +252,9 @@ function getNHTSADataByVIN (param_vin) {
 
  	
 	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aSeries + " " + aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";
-	//document.getElementById("output").value += aDoor + aCab + aBody + " \r\n ";
-	
-	//autobrochures(aMake);    
-      displayNHTSAResults(result);
+	document.getElementById("outputbox").style.display = 'block';  
+    displayNHTSAResults(result);
+		
     },
     error: function(xhr, ajaxOptions, thrownError)
     {
@@ -235,28 +264,6 @@ function getNHTSADataByVIN (param_vin) {
   });
 };
 
-function autobrochures (param_make) {
-	param_make = param_make.toLowerCase()
-  $.ajax({
-    url: "https://www.auto-brochures.com/"+ param_make + ".html" ,
-    //url: "https://obw.carmax.com/api/v1/blackbook/BlackBookVinValues/",
-    type: "POST",
-    data: { format: "text", data: param_make },
-    dataType: "json",
-    success: function(result)
-    {
-      console.log(result);
- 
-	
-      checkLinks(result, "TL");
-    },
-    error: function(xhr, ajaxOptions, thrownError)
-    {
-        console.log(xhr.status);
-        console.log(thrownError);
-    }
-  });
-};
 	
 function displayNHTSAResults (param_data) {
 	var output_text = "";
@@ -268,13 +275,9 @@ function displayNHTSAResults (param_data) {
 			}
 		}
 	}
+	
 	document.getElementById("txt_results").value = output_text;
-	
-	//var e = document.getElementById("nhtsa_data");
-    //e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-	
-	//document.getElementById("nhtsa_data").style.display = (document.getElementById("nhtsa_data").style.display == 'block') ? 'none' : 'block';
-	
+
 	document.getElementById("nhtsa_data").style.display = 'block';
 	updatedisplay ();
 	
@@ -282,9 +285,8 @@ function displayNHTSAResults (param_data) {
 };
 	
 function updatedisplay ( ) {
-	console.log(aMake);
 	if (aMake == "CHRYSLER") {
-	document.getElementById("chrysler_div").style.display = 'block';
+		document.getElementById("chrysler_div").style.display = 'block';
 	} else {
 		document.getElementById("chrysler_div").style.display = 'none';
 	}
@@ -299,18 +301,15 @@ function chryslerlist() {
 	
 
 var input13 = document.getElementById("VINbar");
-input13.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("btn_submit").click();
-  }
-});
+	
+	input13.addEventListener("keyup", function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			document.getElementById("btn_submit").click();
+		}
+	});
 	
 </script>
 	
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		
 </body>
 </html>
