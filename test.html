@@ -15,9 +15,10 @@
 
 <script type="text/javascript"></script>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
 	
-<link rel="stylesheet" href="style.css">	
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chivo:400,700,900|Signika+Negative:300,400,600,700" rel="stylesheet">
 
@@ -29,128 +30,457 @@
 
 
 
-<div class="container" style="background-color:#fff;">
-  <div class="row">
-    <div class="col-4">
-      <h1 class="font-weight-bold">
-		<span style="color:#003366">VIN</span> 
-		<span style="color:#003366"> RESEARCH<span style="background-color:#003366;" class="special-decoration">LINKS</span></span>
-		</h1>
-    </div>
-    <div class="col-8" align="right" style="padding-right: 0px;" >
-		<span style="font-size: 2em; color: #ffd51d; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">bigBK;)</span>
+<div class="container shadow p-3 rounded-0" style="background-color: #fff;">
+  
+	<div class="row">
+    	<div class="col-4">
+      		<h1 class="font-weight-bold">
+			<span style="color:#003366">VIN</span> 
+			<span style="color:#003366"> RESEARCH<span style="background-color:#003366;" class="special-decoration">LINKS</span></span>
+			</h1>
+    	</div>
+    	<div class="col-8" align="right" style="padding-right: 0px;">
+			<div class="col-12">
+				<br><br>
+			</div>
+		<div class="col-12"> 
+			<span style="font-size: 2em; color: #ffd51d; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">bigBK;)</span>
+		</div>
       
-    </div>
- 
-  </div>
-	<div class="row" style="padding-left: 0px; background-color:#003366;">
+    	</div>
+ 	</div>
+	
+	<div class="row" style="padding-left: 0px; padding-top: 5px; padding-bottom: 5px; background-color:#003366;">
 		<div class="col-3 order-1 order-sm-1" style="padding-left: 0px;">
 			<div class="dropdown">
   				<button class="btn btn-secondary dropdown-toggle" style="background-color:#ffd51d; color:#003366;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manual Selection</button>
   				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    				<a class="dropdown-item" href="#">Chrysler/Jeep/Fiat</a>
     				<a class="dropdown-item" href="#">Audi/Volkswagen/Bentley</a>
-    				<a class="dropdown-item" href="#">Ford/Lincoln/Mercury</a>	
-    				<a class="dropdown-item" href="#">Hyundai/Genesis</a>
+					<a class="dropdown-item" href="#">BMW</a>
+					<a class="dropdown-item" href="#">Chrysler/Jeep/Fiat</a>
+    				<a class="dropdown-item" href="#">Ford/Lincoln/Mercury</a>
+					<a class="dropdown-item" href="#">GM</a>
+    				<a class="dropdown-item" href="#">Honda</a>
+					<a class="dropdown-item" href="#">Hyundai/Genesis</a>
+					<a class="dropdown-item" href="#">Infiniti</a>
+					<a class="dropdown-item" href="#">Kia</a>
+					<a class="dropdown-item" href="#">Land Rover</a>
+					<a class="dropdown-item" href="#">Lexus</a>
+					<a class="dropdown-item" href="#">Mazda</a>
+					<a class="dropdown-item" href="#">Mercedes Benz</a>
+					<a class="dropdown-item" href="#">Mitsubishi</a>
+					<a class="dropdown-item" href="#">Nissan</a>
+					<a class="dropdown-item" href="#">Porsche</a>
+					<a class="dropdown-item" href="#">Subaru</a>
+					<a class="dropdown-item" href="#">Tesla</a>
+					<a class="dropdown-item" href="#">Toyota</a>
   				</div>
 			</div>
 
 		</div>
 		 
 		<div class="col-9 order-2 order-sm-2" align="right" style="padding-right: 0px;">
-			<!--<input name="name" type="text" id="VINbar" placeholder="VIN - 17 Digits" >
-			<button class="srch button" type="submit" id="btn_submit"><i class="fa fa-search"></i></button> -->
 			<div class="input-group md-form form-sm form-2 pl-0 w-50">
 				<input name="VIN" id="VINbar" class="form-control my-0 py-1 amber-border" type="text" placeholder="VIN - 17 Digits" aria-label="Search">
 				<div class="input-group-append">
-					<span class="input-group-text amber lighten-3" style="background: #ffd51d;" id="btn_submit"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+					<button class="input-group-text amber lighten-3" style="background: #ffd51d;" id="btn_submit"><i class="fa fa-search text-grey" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>
 		
 	</div>
 	
-  <div class="row">
+	<div class="row">
     <div class="col-md-3 order-md-1 order-3 order-sm-3">
 		
-      <p><span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Inventory Research</strong></span><br>
-		<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> NADA Guides</a><br>
-		<a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=forSaleTab_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=AUTO&entitySelectingHelper.selectedEntity=&entitySelectingHelper.selectedEntity2=&zip=21162&distance=500&searchChanged=true&modelChanged=true&filtersModified=true" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarGurus Used Car Search</a><br>
-		<a href="https://www.commercialtrucktrader.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Commercial Truck Trader</a><br>
-		<a href="http://www.blvd.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Wheelchair Vans</a><br>
-		<a href="https://www.carmax.com/cars?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search</a><br>
-		<a href="https://websearch-website.carmax.com/cars/all?zip=21162&sort=4&distance=all" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> CarMax Search 2</a><br>
-		<a href="https://www.infinitiusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Q60&totalPrice%5B%5D=range%3A50300%2C68575&location%5B%5D=%5B40.1417764%2C-76.38536690000001%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Infiniti Search</a><br>
-		<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"> <span class="glyphicon glyphicon-share"></span> Nissan Search </a><br>
-	
-		<a href="https://www.truecar.com/" target="_blank" class="btn btn-link" title="Use Filters to adjust" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> TrueCar New Car Search</a><br>
+      	<br><p><span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Inventory Research</strong></span>
+		  
+		<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" role="button" aria-pressed="true">NADA Guides</a>
+		<a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=forSaleTab_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=AUTO&entitySelectingHelper.selectedEntity=&entitySelectingHelper.selectedEntity2=&zip=21162&distance=500&searchChanged=true&modelChanged=true&filtersModified=true" target="_blank" role="button" aria-pressed="true">CarGurus</a>
+		<a href="https://www.commercialtrucktrader.com/" target="_blank"  role="button" aria-pressed="true">Commercial Truck Trader</a> 
+		<a href="http://www.blvd.com/" target="_blank" role="button" aria-pressed="true">Wheelchair Vans</a> 
+		<a href="https://www.carmax.com/cars?zip=21162&sort=4&distance=all" target="_blank" role="button" aria-pressed="true">CarMax Search</a>
+		<a href="https://www.carmax.com/search/new-car-pricing" target="_blank"  role="button" aria-pressed="true">New Toyota Pricing</a>
+		<a href="https://websearch-website.carmax.com/cars/all?zip=21162&sort=4&distance=all" target="_blank" role="button" aria-pressed="true">CarMax Search 2</a>
+		<a href="https://www.infinitiusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Q60&totalPrice%5B%5D=range%3A50300%2C68575&location%5B%5D=%5B40.1417764%2C-76.38536690000001%5D" target="_blank" role="button" aria-pressed="true">Infiniti Search</a>
+		<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D" target="_blank" role="button" aria-pressed="true">Nissan Search </a>
+		<a href="https://www.truecar.com/" target="_blank"  role="button" aria-pressed="true">TrueCar New Car Search</a>
+	</p>
+		
+	<p>
+		<span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Tow Hitch Info</strong></span>
+		<a href="https://www.etrailer.com/fitguide.htm" target="_blank" role="button" aria-pressed="true"> e-Trailer</a>
+		<a href="https://www.uhaul.com/Trailer-Hitches/" target="_blank" role="button" aria-pressed="true"> UHaul</a><br>
 	</p>
 	
-
-    </div>
+	<!-- ---new links inserted here -->
+	    
+	<div id="inventory_div" style="display:block; background-color:#fff;">
+		Inventory Research <br>
+		<a href="http://www.nadaguides.com/Cars/Manufacturers" target="_blank" > NADA Guides</a>
+		<a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=forSaleTab_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=AUTO&entitySelectingHelper.selectedEntity=&entitySelectingHelper.selectedEntity2=&zip=21162&distance=500&searchChanged=true&modelChanged=true&filtersModified=true" target="_blank" > CarGurus Used Car Search</a>
+		<a href="https://www.carmax.com/cars?zip=21162&sort=4&distance=all" target="_blank" > CarMax Search</a>
+		<a href="https://websearch-website.carmax.com/cars/all?zip=21162&sort=4&distance=all" target="_blank" > CarMax Search 2</a>
+		<a href="https://www.truecar.com/" target="_blank" > TrueCar New Car Search</a>
+	</div>
+	    
+	<div id="special_div" style="display:block; background-color:#fff;">
+		Specialty inventory <br>
+		<a href="https://www.commercialtrucktrader.com/" target="_blank" > Commercial Truck Trader</a>
+		<a href="http://www.blvd.com/" target="_blank" > Wheelchair Vans</a>
+	</div>
+	    
+	<div id="mech_div" style="display:block; background-color:#fff;">
+		Mechanical and Structural <br>
+		<a href="https://mic.mymitchell.com/" target="_blank" > Mitchell Repair Guide (PY kmxXXXX)</a>  <br>
+		<a href="http://www.owgonline.com/index.php" target="_blank" > Official Warranty Guide (Intranet Only)</a>  <br>
+		<a href="https://repairpal.com/estimator?trk_loc=nav" target="_blank" > RepairPal for estimates</a>  <br>
+		<a href="https://www.motorreviewer.com/" target="_blank" > Motor Reviewer for common issues </a>  <br>
+	</div>    
+	    
+	<div id="tow_div" style="display:block; background-color:#fff;">
+		Tow Hitch Info <br>
+		<a href="https://www.etrailer.com/fitguide.htm" target="_blank" > e-Trailer</a>  <br>
+		<a href="https://www.uhaul.com/Trailer-Hitches/" target="_blank" > UHaul</a>  <br>
+	</div>
+	
+	<!-- ------------------------------------------------ -->
+	</div>
 	
     <div class="col-md-6 order-md-2 order-1 order-sm-1">
+		<div id="loading" class="shadow p-3 rounded-0" style="z-index: 9; position: absolute; opacity: 0.9; top: 100px; margin-top: 20px; margin-bottom: 20px; background-color:#77c2e6; width: 100%text-align: center;">
+			<div class="spinner-grow" style="width: 1rem; height: 1rem;" role="status">
+				<span class="sr-only"></span>
+			</div>
+			Please wait while VIN details are being pulled from NHTSA. If their server is down or this process takes longer than 10 seconds, you can use the Manual Selection menu on the upper left corner to retrieve manufacturer specific links. 
+		</div>
+
+	    
+		<div id="kmxsearch" style="display:block; background-color:#fff;">
+			<input name="iyear" id="iyear" class="form-control my-0 py-1 amber-border" type="text" placeholder="Year">
+			<input name="imake" id="imake" class="form-control my-0 py-1 amber-border" type="text" placeholder="Make">
+			<input name="imodel" id="imodel" class="form-control my-0 py-1 amber-border" type="text" placeholder="Model">
+			<input name="itrim" id="itrim" class="form-control my-0 py-1 amber-border" type="text" placeholder="Trim">
+			<input name="icyl" id="icyl" class="form-control my-0 py-1 amber-border" type="text" placeholder="Cylinder Count">
+													 
+<form>
+<label><input type="checkbox" value="navigation-system" name="options"> Navigation</label>
+<label><input type="checkbox" value="no-navigation-system" name="options"> No Navigation</label>
+<label><input type="checkbox" value="dvd-video-system" name="options"> DVD</label>
+<label><input type="checkbox" value="no-dvd-video-system" name="options"> No DVD</label>
+<label><input type="checkbox" value="blu-ray-video-system" name="options"> Blu-Ray</label>
+<label><input type="checkbox" value="premium-sound" name="options"> Premium Sound</label>
+<br><br>
+<label><input type="checkbox" value="sunroof(s)" name="options"> Sunroof</label>
+<label><input type="checkbox" value="no-sunroof(s)" name="options"> No Sunroof</label>
+<label><input type="checkbox" value="panoramic-sunroof" name="options"> Panoramic Sunroof</label>
+<label><input type="checkbox" value="no-panoramic-sunroof" name="options"> No Panoramic Sunroof</label>
+<label><input type="checkbox" value="skylight(s)" name="options"> Skylight</label>
+<label><input type="checkbox" value="alloy-wheels" name="options"> Alloy Wheels</label>
+<label><input type="checkbox" value="no-alloy-wheels" name="options"> Steel Wheels</label>
+<label><input type="checkbox" value="20-inch-plus-wheels" name="options"> 20"+ Wheels</label>
+<label><input type="checkbox" value="soft-top" name="options"> Soft Top</label>
+<label><input type="checkbox" value="hard-top" name="options"> Hard Top</label>
+<br><br>
+<label><input type="checkbox" value="2wd" name="options"> 2WD</label>
+<label><input type="checkbox" value="4wdawd" name="options"> 4WD/AWD</label>
+<label><input type="checkbox" value="manual-transmission" name="options"> Manual Transmission</label>
+<label><input type="checkbox" value="automatic-transmission" name="options"> Automatic Transmission</label>
+<label><input type="checkbox" value="diesel-engine" name="options"> Diesel Engine</label>
+<label><input type="checkbox" value="turbo-charged-engine" name="options"> Turbo Charged Engine</label>
+<br><br>
+<label><input type="checkbox" value="3rd-rear-seat" name="options"> 3rd Row Seats</label>
+<label><input type="checkbox" value="cloth-seats" name="options"> Cloth Seats</label>
+<label><input type="checkbox" value="leatherette-seats" name="options"> Leatherette Seats</label>
+<label><input type="checkbox" value="leatherette-&-cloth" name="options"> Leatherette & Cloth Seats</label>
+<label><input type="checkbox" value="leather-seats" name="options"> Leather Seats</label>
+<label><input type="checkbox" value="leather-&-suede-seats" name="options"> Leather & Suede Seats</label>
+<br><br>
+<label><input type="checkbox" value="2d-regular-cab" name="options"> 2D Regular Cab</label>
+<label><input type="checkbox" value="2d-extended-cab" name="options"> 2D Extended Cab</label>
+<label><input type="checkbox" value="4d-extended-cab" name="options"> 4D Extended Cab</label>
+<label><input type="checkbox" value="4d-crew-cab" name="options"> 4D Crew Cab</label>
+<label><input type="checkbox" value="4d-extended-crew-cab" name="options"> 4D Extended Crew Cab</label>
+</form>
+			<button id="kmxbutton" type="button" class="btn btn-sm btn-primary">Carmax Search</button>
+			
+		</div>		
+    
+		
     	<div id="outputbox" class="shadow p-3 rounded-0" style="display:none; margin-top: 20px; margin-bottom: 20px; background-color:#77c2e6; width: 100%; text-align: center;">
 				<output name="output" id="output">
 				
 				</output>
 		</div>
 			
-		<div id="chrysler_div" style="display:none; background-color:#fff;">
-			<p><span style="font-size: 16px; background-color:#fdde58; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong> These links work for Chrysler, Jeep, RAM, Fiat, Alfa Romeo</strong></span><br></p>
-			
-			<p style="line-height:1.5">
-			<button class="linkbutton" type="submit" id="chr" title="This will open PDF window sticker" onclick="chrysler()"> Window Sticker</button> Available for newer vehicles <br>
-			<button class="linkbutton" type="submit" id="chrbutton" title="This will open PDF window sticker" onclick="chryslerlist()"> Build Sheet</button> Available for most vehicles <br>
-			</p>	
-		</div>
 		
+			
+<!-- ---new links inserted here -->
+<div id="common_div" style="display:none; background-color:#fff;">
+			<div class="card-deck">
+				<div class="card bg-light" style="width: 14rem; cursor: pointer;" onmouseover="" onclick="autobrochures()">
+  					<div class="card-body">
+    						<h4 class="card-title">Sales Brochures</h4>
+    						<h6 class="card-subtitle mb-2 text-muted">PDF</h6>
+    						<p class="card-text">Available from AutoBrochures</p>
+  					</div>
+				</div>
+				<div class="card bg-light" style="width: 14rem; cursor: pointer;" onmouseover="" onclick="manheimmmr()">
+  					<div class="card-body">
+    						<h4 class="card-title">MMR Data</h4>
+    						<h6 class="card-subtitle mb-2 text-muted">Requires Log-in</h6>
+    						<p class="card-text">Manheim MMR search for VIN</p>
+  					</div>
+				</div>	
+			</div>	
+</div>
 
-    </div>
+<div id="audi_div" style="display:none; background-color:#fff;">
+Audi <br>
+<a id="VWAUDIbtn2" onclick="vwaudilane()"> Audi/Volkswagen/Bentley</a>  <br>
+</div>
+
+<div id="bmw_div" style="display:none; background-color:#fff;">
+BMW <br>
+<a href="https://f30.bimmerpost.com/forums/showthread.php?t=1505215" target="_blank" >2019/2020 BMW ALL Links</a>  <br>
+<a href="http://www.bimmerfest.com/forums/showthread.php?t=983787" target="_blank" >2018 BMW ALL Links</a>  <br>
+<a href="http://www.bimmerfest.com/forums/showthread.php?t=916818" target="_blank" >2017 BMW ALL Links</a>  <br>
+<a href="http://www.bimmerfest.com/forums/showthread.php?t=833290" target="_blank" >2016 BMW ALL Links</a>  <br>
+<a href="http://www.bimmerfest.com/forums/showthread.php?t=753931" target="_blank" >2015 BMW ALL Links</a>  <br>
+<a href="http://www.bimmerfest.com/forums/showthread.php?t=674004" target="_blank" >2014 BMW ALL Links</a>  <br>
+<a href="http://www.xbimmers.com/forums/attachment.php?attachmentid=1065726&d=1406300223" target="_blank" >2013 BMW Combined PDF</a>  <br>
+<a href="http://f30.bimmerpost.com/forums/attachment.php?attachmentid=609230&d=1321578669" target="_blank" >2012 BMW 3 Series PDF</a>  <br>
+<a href="http://www.bimmerpost.com/goodiesforyou/my2011orderingguide.pdf" target="_blank" >2011 BMW Combined PDF</a>  <br>
+<a href="http://www.autospies.com/images/users/Agent00R/MY2010VehicleOrderingGuide.pdf" target="_blank" >2010 BMW Combined PDF</a>  <br>
+<a href="http://www.bimmerpost.com/goodiesforyou/2009order.pdf" target="_blank" >2009 BMW Combined PDF</a>  <br>
+<a href="http://www.bimmerfile.com/wp-content/uploads/2008/02/2008-online-ordering-guide.pdf" target="_blank" >2008 BMW Combined PDF</a>  <br>
+<a href="http://www.autospies.com/images/users/Agent001/CompleteOrderGuide.pdf" target="_blank" >2007 BMW Combined PDF</a>  <br>
+<a href="https://www.autoevolution.com/mini/" target="_blank" >MINI Production Models</a>  <br>
+<span align="left"> <input size="4" placeholder="Year" id="year" type="text"><input size="12" placeholder="Model" id="model" type="text"> </span>
+<a style="cursor:pointer;border-style:none;" onclick="miniog()"> MINI Guide Search</a>  <br>
+<a href="https://bimmercat.com/bmw/en/vin/decoder" target="_blank" > BMW/MINI from bimmercat</a>  <br>
+<a href="https://decoder.bvzine.com/" target="_blank" > BMW/MINI from bvzine</a>  <br>
+<a style="cursor:pointer;border-style:none;" onclick="bmwlane()"> BMW Lanes at NADE</a>  <br>
+</div>
+
+<div id="chrysler_div" style="display:none; background-color:#fff;">
+<br><p><span> Links that are listed here will work for Chrysler, Jeep, RAM, Fiat, Alfa Romeo vehicles.</span><br></p>
+			<div class="card-deck">
+				<div class="card bg-light" style="width: 14rem; cursor: pointer;" onmouseover="" onclick="chrysler()">
+  					<div class="card-body">
+    						<h4 class="card-title">Window Sticker</h4>
+    						<h6 class="card-subtitle mb-2 text-muted">PDF</h6>
+						<p class="card-text">Available for newer vehicles</p>
+    						<!-- <a href="#" class="card-link">Download</a> -->
+  					</div>
+				</div>
+			
+				<div class="card bg-light" style="width: 14rem; cursor: pointer;" onmouseover="" onclick="chryslerlist()">
+  					<div class="card-body">
+    						<h4 class="card-title">Build Sheet</h4>
+    						<h6 class="card-subtitle mb-2 text-muted">PDF</h6>
+    						<p class="card-text">Equipment listing available for most vehicles</p>
+  					</div>
+				</div>
+			</div>
+			
+			
+
+	    <br>
+	    
+	Chrysler <br>
+	<a id="chrbutton" onclick="chryslerlist()"> Dodge/Chrysler/Jeep/Fiat/Alfa Romeo</a>  <br>
+	<a href="https://dodgeforum.com/forum/vindecoder.php" target="_blank" > Generic VIN Decoder for Standard Options</a>  <br>
+	<a id="chr" onclick="chrysler()"> Dodge/Chrysler/Jeep/Fiat/Alfa Romeo</a>  <br>
+</div>
+
+<div id="ford_div" style="display:none; background-color:#fff;">
+Ford <br>
+<a id="fordbutton" onclick="ford()"> Ford (Select New Vehicles)</a>  <br>
+<a id="fordwikibutton" onclick="fordwiki()"> Ford/Lincoln/Mercury </a>  <br>
+<a id="fordbutton2" onclick="fordsticker()"> Ford/Lincoln (Dealer Inventory Only)</a>  <br>
+</div>
+
+<div id="gm_div" style="display:none; background-color:#fff;">
+GM <br>
+<a id="gmbutton" onclick="gmlink()"> GM some Bel Air inventory</a>  <br>
+</div>
+
+<div id="honda_div" style="display:none; background-color:#fff;">
+honda <br>
+<a id="hondabutton" onclick="honda()"> Honda NAV/RES Specific Trim Requires Honda Owner Account. jasib123 sl..</a>  <br>
+</div>
+
+<div id="hyundai_div" style="display:none; background-color:#fff;">
+Hyundai <br>
+<a href="https://autoservice.hyundaiusa.com/campaignhome" target="_blank" > Hyundai Trim Level</a>  <br>
+<a id="hyunwikibutton" onclick="hyunwiki()"> Hyundai/Genesis</a>  <br>
+</div>
+
+<div id="infiniti_div" style="display:none; background-color:#fff;">
+Infiniti <br>
+<a href="https://www.infinitiusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Q60&totalPrice%5B%5D=range%3A50300%2C68575&location%5B%5D=%5B40.1417764%2C-76.38536690000001%5D" target="_blank" > Infiniti Search</a>  <br>
+<a id="infinitibutton" onclick="infiniti()"> Infiniti Trim Level</a>  <br>
+<a href="https://www.oemstickers.com/" target="_blank"> Nissan/Infiniti You will have to enter VIN twice </a>  <br>
+</div>
+
+<div id="kia_div" style="display:none; background-color:#fff;">
+Kia <br>
+<a id="kiabutton" onclick="kia()"> Kia Trim Level</a>  <br>
+<a id="kiabutton2" onclick="kiabtn2()"> Kia </a>  <br>
+</div>
+
+<div id="lr_div" style="display:none; background-color:#fff;">
+Land Rover <br>
+<a href="https://topix.landrover.jlrext.com/topix/vehicle/lookupForm" target="_blank"  > Land Rover/Jaguar jas...1.. sl-03 Requires login, free account</a>  <br>
+</div>
+
+<div id="lexus_div" style="display:none; background-color:#fff;">
+Lexus <br>
+<a href="https://drivers.lexus.com/lexusdrivers/resources/vehicle-specs" target="_blank" > Lexus</a>  <br>
+</div>
+
+<div id="mazda_div" style="display:none; background-color:#fff;">
+Mazda <br>
+<a id="mazdabutton" onclick="mazdabtn2()"> Mazda </a>  <br>
+<a id="mazdabtn" onclick="mazdabtn()"> Mazda (Dealer Inventory Only)</a>  <br>
+</div>
+
+<div id="mb_div" style="display:none; background-color:#fff;">
+Mercedes Benz<br>
+<a id="mbdecoderzbutton" onclick="decoderz()"> Mercedes from Vin Decoderz</a>  <br>
+<a href="https://www.lastvin.com/" target="_blank" > Mercedes #1</a>  <br>
+<a href="http://mb.vin/" target="_blank" > Mercedes #2</a>  <br>
+</div>
+
+<div id="mitsubishi_div" style="display:none; background-color:#fff;">
+Mitsubishi <br>
+<a id="mitsbutton" onclick="mitsbtn()"> Mitsubishi </a>  <br>
+<a id="mitsbutton2" onclick="mitsbtn2()"> Mitsubishi </a>  <br>
+</div>
+
+<div id="nissan_div" style="display:none; background-color:#fff;">
+Nisan <br>
+<a id="nissanbutton" onclick="nissan()"> Nissan Trim Level</a>  <br>
+<a href="https://www.nissanusa.com/shopping-tools/search-inventory/inventory-results.html#/search!model.name%5B%5D=Versa%20Sedan&location%5B%5D=%5B39.3949598%2C-76.3984537%5D" target="_blank" > Nissan Search</a>  <br>
+<a href="https://www.oemstickers.com/" target="_blank"> Nissan/Infiniti You will have to enter VIN twice </a>  <br> <br>
+</div>
+
+<div id="porsche_div" style="display:none; background-color:#fff;">
+Porsche <br>
+<a id="porwikibutton" onclick="porwiki()"> Porsche</a>  <br>
+</div>
+
+<div id="subaru_div" style="display:none; background-color:#fff;">
+Subaru <br>
+<a id="subbutton" onclick="subaru()"> Subaru Trim Level (Options with caution) </a>  <br>
+</div>
+
+<div id="tesla_div" style="display:none; background-color:#fff;">
+Tesla <br>
+<a href="https://sites.google.com/site/teslamotorsclubwiki/home/model-s/options-by-year" target="_blank" > Model S Option Changes</a>  <br>
+<a href="https://www.tesla.com/sites/default/files/model_3_owners_manual_north_america_en.pdf" target="_blank" > Model 3 Manual PDF</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_3-2017/trims/" target="_blank" > 2017 Model 3 Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_3-2018/trims/" target="_blank" > 2018 Model 3 Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_3-2019/trims/" target="_blank" > 2019 Model 3 Packages by Trim</a>  <br>
+<a href="https://www.tesla.com/sites/default/files/model_s_owners_manual_north_america_en_us.pdf" target="_blank" > Model S Manual PDF</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2012/trims/" target="_blank" > 2012 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2013/trims/" target="_blank" > 2013 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2014/trims/" target="_blank" > 2014 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2015/trims/" target="_blank" > 2015 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2016/trims/" target="_blank" > 2016 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2017/trims/" target="_blank" > 2017 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2018/trims/" target="_blank" > 2018 Model S Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_s-2019/trims/" target="_blank" > 2019 Model S Packages by Trim</a>  <br>
+<a href="https://www.tesla.com/sites/default/files/model_x_owners_manual_north_america_en.pdf" target="_blank" > Model X Manual PDF</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_x-2016/trims/" target="_blank" > 2016 Model X Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_x-2017/trims/" target="_blank" > 2017 Model X Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_x-2018/trims/" target="_blank" > 2018 Model X Packages by Trim</a>  <br>
+<a href="https://www.cars.com/research/tesla-model_x-2019/trims/" target="_blank" > 2019 Model X Packages by Trim</a>  <br>
+</div>
+
+<div id="toyota_div" style="display:none; background-color:#fff;">
+Toyota <br>
+<a href="https://www.carmax.com/search/new-car-pricing" target="_blank" > New Car Pricing</a>  <br>
+<a href="https://www.toyota.com/owners/vehicle-specification" target="_blank" > Toyota</a>  <br>
+</div>
+		
+	<div id="auction_div" style="display:block; background-color:#fff;">
+		Auction Links <br>
+<a id="mmrbutton" onclick="manheimmmr()"> MMR Search</a>  <br>
+<a id="manheimbutton" onclick="manheimsearch()"> Manheim Inventory &amp; CR </a>  <br>
+<a href="http://www.bscamerica.com/bel-air-auction/run-list/#/" target="_blank" > Bel Air Auto Auction Run List</a>  <br>
+<a href="https://www.manheim.com/members/marketreport/control/MarketReportMain?auctionID=MAA" target="_blank" > Manheim Post Sale Results</a>  <br>
+<a href="https://www.manheim.com/sales_schedule?id[]=&amp=&max_records=25&amp=&sort=saledatetime&amp=&sort_order=asc&id[]=177" target="_blank" > Manheim NJ Sale</a>  <br>
+<a href="https://www.manheim.com/sales_schedule?id[]=&amp=&max_records=25&amp=&sort=saledatetime&amp=&sort_order=asc&id[]=165" target="_blank" > Manheim PA Sale</a>  <br>
+<a href="https://www.manheim.com/secureredirect?product=Simulcast&WT.svl=m_hdr_mnav_buy_sim" target="_blank" > Manheim Simulcast</a>  <br>
+<a href="https://www.smartauctioninspections.com/viw/aspx/general/DealerInspectionReport.aspx" target="_blank" > SmartAuction Inspections</a>  <br>
+	</div>
+<!-- -------------------------------------------------- -->									 
+ 
+</div>
 	
     <div class="col-md-3 order-md-3 order-2 order-sm-2">
       <p>
-		<span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Blackbook and Research</strong></span><br>
-		<a href="http://www.blackbookportals.com/bb/products/vinpricingxpresshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook First Values</a><br>
-		<a href="http://www.blackbookusa.com/bb/products/usedcarhtmlportal.asp?color=d&companyid=cudirect.com" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook Used Car</a><br>
-		<a href="http://www.blackbookportals.com/bb/products/newcarhtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook New Car Info </a><br>
-		<a href="http://www.blackbookportals.com/bb/products/cycleshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" class="btn btn-link" title="BlackBook Online" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> BlackBook Recreational</a><br>
-		<a href="http://www.auto-brochures.com" target="_blank" class="btn btn-link" title="Factory Brochures" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Auto Brochures</a><br>
-		<a href="http://www.motortrend.com/cars/" target="_blank" class="btn btn-link" title="Great resource for BMW or MINI packages" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Motor Trend for Packages</a><br>
-		<a href="http://autoweek.com/buyers-guide" target="_blank" class="btn btn-link" title="Great resource for BMW or MINI packages" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> AutoWeek for Packages</a><br>
-		<a href="https://care.siriusxm.com/vinlookup_view.action" target="_blank" class="btn btn-link" title="Sirius XM VIN check" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span> Satellite Radio VIN Check</a><br>
-		<a href="https://propelfuels.com/vehicles" target="_blank" class="btn btn-link" title="Search by make/model to see 8th digit VIN" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span>Flex Fuel VIN Code Check</a><br>
-		<a href="http://www.ethanolretailer.com/images/uploads/FFV-2017.pdf" target="_blank" class="btn btn-link" title="2014 PDF List" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span>Flex Fuel 2017 PDF List</a><br>
-		<a href="https://www.goodyear.com/en-US/tire-guide/find-tire-size" target="_blank" class="btn btn-link" title="VIN/License Plate Search" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span>Tire Sizes VIN/License Plate</a><br>
-		<a href="https://www.vehiclehistory.com/license-plate-search.php" target="_blank" class="btn btn-link" title="VIN/License Plate Search" style="cursor:pointer;border-style:none;background:#ffffff;"><span class="glyphicon glyphicon-share"></span>License Plate Search for VIN</a><br>
-		</p>	
+		<br><span style="font-size: 16px; background-color:#ffd51d; color: #036; font-family: Montserrat,'Trebuchet MS',Helvetica,sans-serif;"><strong>Blackbook and Research</strong></span>
+		<a href="http://www.blackbookportals.com/bb/products/vinpricingxpresshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" role="button" aria-pressed="true"> BlackBook First Values</a>
+		<a href="http://www.blackbookusa.com/bb/products/usedcarhtmlportal.asp?color=d&companyid=cudirect.com" target="_blank" role="button" aria-pressed="true"> BlackBook Used Car</a>
+		<a href="http://www.blackbookportals.com/bb/products/newcarhtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" role="button" aria-pressed="true"> BlackBook New Car Info </a>
+		<a href="http://www.blackbookportals.com/bb/products/cycleshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" role="button" aria-pressed="true"> BlackBook Recreational</a>
+		<a href="http://www.auto-brochures.com" target="_blank" role="button" aria-pressed="true"> Auto Brochures</a>
+		<a href="http://www.motortrend.com/cars/" target="_blank" role="button" aria-pressed="true"> Motor Trend for Packages</a>
+		<a href="http://autoweek.com/buyers-guide" target="_blank" role="button" aria-pressed="true"> AutoWeek for Packages</a>
+		<a href="https://care.siriusxm.com/vinlookup_view.action" target="_blank" role="button" aria-pressed="true"> Satellite Radio VIN Check</a>
+		<a href="https://propelfuels.com/vehicles" target="_blank" role="button" aria-pressed="true">Flex Fuel VIN Code Check</a>
+		<a href="http://www.ethanolretailer.com/images/uploads/FFV-2017.pdf" target="_blank" role="button" aria-pressed="true">Flex Fuel 2017 PDF List</a>
+		<a href="https://www.goodyear.com/en-US/tire-guide/find-tire-size" target="_blank" role="button" aria-pressed="true">Tire Sizes VIN/License Plate</a>
+		<a href="https://www.vehiclehistory.com/license-plate-search.php" target="_blank" role="button" aria-pressed="true">License Plate Search for VIN</a>
+		</p>
+																   
+	<!-- ---new links inserted here -->																   
+	<div id="blackbook_div" style="display:block; background-color:#fff;">
+		Blackbook <br>
+		<a href="https://www.blackbookpricepoint.com/PDF/2017160camaro.pdf" target="_blank" > BlackBook guide UVC(7)+model</a>  <br>
+		<a href="http://www.blackbookportals.com/bb/products/vinpricingxpresshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" > BlackBook First Values</a>  <br>
+		<a href="http://www.blackbookusa.com/bb/products/usedcarhtmlportal.asp?color=d&companyid=cudirect.com" target="_blank" > BlackBook Online</a>  <br>
+		<a href="http://www.blackbookportals.com/bb/products/newcarhtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" > BlackBook New Car Info </a>  <br>
+		<a href="http://www.blackbookportals.com/bb/products/cycleshtmlportal.asp?color=o&companyid=thinkbank.COM" target="_blank" > BlackBook Recreational</a>  <br>
+	</div>														   
+	
+	<div id="research_div" style="display:block; background-color:#fff;">
+		VIN Decoders and Research <br>
+		<a href="http://www.auto-brochures.com" target="_blank" > Auto Brochures</a>  <br>
+		<a href="http://www.motortrend.com/cars/" target="_blank" > Motor Trend for Packages</a>  <br>
+		<a href="http://autoweek.com/buyers-guide" target="_blank" > AutoWeek for Packages</a>  <br>
+		<a href="https://care.siriusxm.com/vinlookup_view.action" target="_blank" > Satellite Radio VIN Check</a>  <br>
+		<a href="https://propelfuels.com/vehicles" target="_blank" > Flex Fuel VIN Code Check</a>  <br>
+		<a href="http://www.ethanolretailer.com/images/uploads/FFV-2017.pdf" target="_blank" > Flex Fuel 2017 PDF List</a>  <br>
+		<a href="https://www.goodyear.com/en-US/tire-guide/find-tire-size" target="_blank" > Tire Sizes VIN/License Plate</a>  <br>
+		<a href="https://www.vehiclehistory.com/license-plate-search.php" target="_blank" > License Plate Search for VIN</a>  <br>
+		<a id="decoderzbutton" onclick="decoderz()"> Vin Decoderz, Use Caution (MB,Toyota...)</a>  <br>
+	</div>														   
     </div>
+
+		
+														   
   </div>
 	<div class="row">
-		<div class="col"> 
+		<div class="col-md-3 order-md-1 order-3 order-sm-3"> 
 		</div>
-		<div class="col-8"> 
-			<div id="nhtsa_data" style="display:none; background-color:#fff;">
+		<div class="col-md-6 order-md-2 order-1 order-sm-1"> 
+			<div id="nhtsa_data" style="display:none; background-color:#fff;" align="center">
         		<textarea id="txt_results" rows="6" cols="60" placeholder="Vehicle Data Presented Here"></textarea>
 			</div>
 		</div>
-		<div class="col"> 
+		<div class="col-md-3 order-md-3 order-2 order-sm-2"> 
 		</div>
 		
-
 		
 	</div>
 				  
-</div>
+</div> 
 
-		
-
-
-													       
-
-	
-
-				     
+					     
 		
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -164,6 +494,20 @@
 	var aYear;
 	var aMake;
 	var aModel;
+	var aCyl;
+	
+var $loading = $('#loading').hide();
+$( document ).ajaxStart(function() {
+	console.log("loading");
+    $( "#loading" ).show();
+});
+
+$( document ).ajaxStop(function() {
+	console.log("loaded");
+    $( "#loading" ).hide();
+});
+
+
 	
 document.getElementById("btn_submit").onclick = function () {
   //var vin;
@@ -181,6 +525,7 @@ document.getElementById("btn_submit").onclick = function () {
 }
 
 };
+
 
 
 function getNHTSADataByVIN (param_vin) {
@@ -224,6 +569,11 @@ function getNHTSADataByVIN (param_vin) {
 	} else {
 		aDisp = ""
 	};
+	if ( result.Results[0].FuelTypePrimary !== "")  { 
+		aFuel = result.Results[0].FuelTypePrimary
+	} else {
+		aFuel = ""
+	};
 	if ( result.Results[0].EngineCylinders !== "")  { 
 		aCyl = result.Results[0].EngineCylinders + "cyl"
 	} else {
@@ -250,8 +600,18 @@ function getNHTSADataByVIN (param_vin) {
 		aBody= ""
 	};
 
+	document.getElementById("iyear").value = aYear;
+	document.getElementById("imake").value = aMake;
+	document.getElementById("imodel").value = aModel;
+	if ( result.Results[0].EngineCylinders !== "")  { 
+		document.getElementById("icyl").value = result.Results[0].EngineCylinders;
+					 
+	} else {
+		document.getElementById("icyl").value = ""
+	};
+	
  	
-	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aSeries + " " + aTrim + ", "+ aDisp + " " + aCyl + ", " + aDrive  + " \n " + aDoor + aCab + " " + aBody + " \r\n ";
+	document.getElementById("output").innerText = aYear + " " + aMake + " " + aModel + " " + aSeries + " " + aTrim + ", "+ aDisp + " " + aFuel + ", " + aCyl + " \n " + aDoor + aCab + " " + aBody + ", " + aDrive  + " \r\n ";
 	document.getElementById("outputbox").style.display = 'block';  
     displayNHTSAResults(result);
 		
@@ -285,21 +645,268 @@ function displayNHTSAResults (param_data) {
 };
 	
 function updatedisplay ( ) {
-	if (aMake == "CHRYSLER") {
+	if (aMake !== "") {
+		document.getElementById("common_div").style.display = 'block';
+		//document.getElementById("kmxsearch").style.display = 'block';
+	} else {
+		document.getElementById("common_div").style.display = 'none';
+		//document.getElementById("kmxsearch").style.display = 'none';
+	}
+	
+	if (aMake == "AUDI" || aMake == "VOLKSWAGEN" || aMake == "BENTLEY") {
+		document.getElementById("audi_div").style.display = 'block';
+	} else {
+		document.getElementById("audi_div").style.display = 'none';
+	}
+		
+	if (aMake == "BMW") {
+		document.getElementById("bmw_div").style.display = 'block';
+	} else {
+		document.getElementById("bmw_div").style.display = 'none';
+	}
+	
+	if (aMake == "CHRYSLER" || aMake == "DODGE" || aMake == "JEEP" || aMake == "RAM" || aMake == "ALFA ROMEO" || aMake == "FIAT") {
 		document.getElementById("chrysler_div").style.display = 'block';
 	} else {
 		document.getElementById("chrysler_div").style.display = 'none';
 	}
+		
+	if (aMake == "FORD") {
+		document.getElementById("ford_div").style.display = 'block';
+	} else {
+		document.getElementById("ford_div").style.display = 'none';
+	}
+	
+	if (aMake == "CHEVROLET" || aMake == "BUICK" || aMake == "CADILLAC" || aMake == "GMC") {
+		document.getElementById("gm_div").style.display = 'block';
+	} else {
+		document.getElementById("gm_div").style.display = 'none';
+	}
+	
+	if (aMake == "HONDA") {
+		document.getElementById("honda_div").style.display = 'block';
+	} else {
+		document.getElementById("honda_div").style.display = 'none';
+	}
+	
+	if (aMake == "HYUNDAI"  || aMake == "GENESIS") {
+		document.getElementById("hyundai_div").style.display = 'block';
+	} else {
+		document.getElementById("hyundai_div").style.display = 'none';
+	}
+	
+	if (aMake == "INFINITI") {
+		document.getElementById("infiniti_div").style.display = 'block';
+	} else {
+		document.getElementById("infiniti_div").style.display = 'none';
+	}
+	
+	if (aMake == "KIA") {
+		document.getElementById("kia_div").style.display = 'block';
+	} else {
+		document.getElementById("kia_div").style.display = 'none';
+	}
+
+	if (aMake == "LAND ROVER") {
+		document.getElementById("lr_div").style.display = 'block';
+	} else {
+		document.getElementById("lr_div").style.display = 'none';
+	}
+	
+	if (aMake == "LEXUS") {
+		document.getElementById("lexus_div").style.display = 'block';
+	} else {
+		document.getElementById("lexus_div").style.display = 'none';
+	}
+	
+	if (aMake == "MAZDA") {
+		document.getElementById("mazda_div").style.display = 'block';
+	} else {
+		document.getElementById("mazda_div").style.display = 'none';
+	}
+	
+	if (aMake == "MERCEDES BENZ") {
+		document.getElementById("mb_div").style.display = 'block';
+	} else {
+		document.getElementById("mb_div").style.display = 'none';
+	}
+	
+	if (aMake == "MITSUBISHI") {
+		document.getElementById("mitsubishi_div").style.display = 'block';
+	} else {
+		document.getElementById("mitsubishi_div").style.display = 'none';
+	}
+	
+	if (aMake == "NISSAN") {
+		document.getElementById("missan_div").style.display = 'block';
+	} else {
+		document.getElementById("nissan_div").style.display = 'none';
+	}
+	
+	if (aMake == "PORSCHE") {
+		document.getElementById("porsche_div").style.display = 'block';
+	} else {
+		document.getElementById("porsche_div").style.display = 'none';
+	}
+	
+	if (aMake == "SUBARU") {
+		document.getElementById("subaru_div").style.display = 'block';
+	} else {
+		document.getElementById("subaaru_div").style.display = 'none';
+	}
+	
+	if (aMake == "TESLA") {
+		document.getElementById("tesla_div").style.display = 'block';
+	} else {
+		document.getElementById("tesla_div").style.display = 'none';
+	}
+	
+	if (aMake == "TOYOTA") {
+		document.getElementById("toyota_div").style.display = 'block';
+	} else {
+		document.getElementById("toyota_div").style.display = 'none';
+	}
+};
+
+<!-- MANUFACTURER LINKS  -->
+
+
+function audivwwiki() {
+	window.open("http://mclaren722.herokuapp.com/VWvindownload?vin=" + vin);
+};
+
+function autobrochures() {
+	window.open(" http://www.auto-brochures.com/"+aMake+".html");
+};
+
+function bimmerbtn() {
+	window.open("https://www.mdecoder.com/decode/" + vin);
+};
+
+function bmwlane() {
+	window.open("http://windowsticker-prod.aws.manheim.com/windowsticker/BMW/" + vin);
 };
 
 function chrysler() {
-	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin="+vin);
+	window.open("https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=" + vin);
 };
-function chryslerlist() {
-	window.open(" http://www.chrysler.com/webselfservice/BuildSheetServlet?vin="+vin);
-};
-	
 
+function chryslerlist() {
+	window.open(" http://www.chrysler.com/webselfservice/BuildSheetServlet?vin=" + vin);
+};
+
+function decoderz() {
+	window.open("https://www.vindecoderz.com/EN/check-lookup/" + vin);
+};
+
+function ford() {
+	window.open("https://www.etis.ford.com/selectedVehicleDetails.do#vin=" + vin);
+};
+
+function fordsticker() {
+	window.open("http://www.windowsticker.forddirect.com/windowsticker.pdf?vin=" + vin);
+};
+
+function fordwiki() {
+	window.open("https://windowsticker.minacs.com/generate/ws_print_caller.cfm?request_type=IP&vin=" + vin +"&pc=SIMULCAST&ari=&lane_num=&run_num=&param2=56cee0f6e93cd16f9aa1d1ca8cfe73e1");
+};
+
+function gmlink() {
+	window.open("https://windowsticker-prod.aws.manheim.com/showGmWs?auctionID=&workOrderNumber=7055030&sblu=11546249&vin=" + vin);
+};
+
+function honda() {
+	window.open(" https://owners.honda.com/validation/validatevin?vin=" + vin);
+};
+
+function hyunwiki() {
+	window.open("http://www.mikemillerhyundai.com/services/hyundai/windowSticker.do?vin=" + vin);
+};
+
+function infiniti() {
+	window.open("https://www.infinitiusa.com/recalls-vin/#/#/Results/" + vin);
+};
+
+function kia() {
+	window.open(" http://www.kia.com/us/en/data/owners/recalls/search/" + vin);
+};
+
+function kiabtn2() {
+	window.open("https://www.kia.com/us/en/data/dealerinventory/windowsticker/" + vin)
+};
+
+function lexlist() {
+	window.open(" https://drivers.lexus.com/lexusdrivers/resources/viewSpecifications?vin=" + vin);
+};
+
+function miniog() {
+	var vin = aYear + " +" + aModel;
+	vin = vin.toUpperCase();
+	window.open("https://www.google.com/search?q=" + vin + " +ordering+guide+site%3Aminimedia.iconicweb.com");
+};
+
+function manheimmmr() {
+	window.open("https://mmr.manheim.com/?WT.svl=m_hdr_mnav_buy_mmr&country=US&popup=true&source=man&vin=" + vin);
+};
+
+function manheimsearch() {
+	window.open("https://www.manheim.com/members/powersearch/keywordSearchResults.do?searchTerms=" + vin);
+};
+
+function mazdabtn() {
+	window.open("https://www.mazdausa.com/MusaWeb/displayDealerWindowSticker.action?vin=" + vin +"&dealerId=51622");
+};
+
+function mazdabtn2() {
+	window.open("https://windowsticker.minacs.com/generate/ws_print_caller.cfm?request_type=IP&vin=" + vin+"&pc=SIMULCAST_MZ&ari=&lane_num=&run_num=&param2=56cee0f6e93cd16f9aa1d1ca8cfe73e1");
+};
+
+function mitsbtn() {
+	window.open("https://www.mitsubishicars.com/rs/file/monroney?vin=" + vin);	
+};
+
+function mitsbtn2() {
+	window.open("https://www.mitsubishicars.com/rs/file/monroney?vin=" + vin);
+};
+
+function nissan() {
+	window.open("https://www.nissanusa.com/recalls-vin/#/#/Results/" + vin);
+};
+
+function nissanbtn() {
+	window.open("http://cpo.nissanusa.com/nna/?" + vin);
+};
+
+function porwiki() {
+	window.open("https://vinanalytics.com/car/" + vin + "/" + vin +".pdf");
+};
+
+function subaru() {
+	window.open("https://www.subaru.com/owners/vehicle-resources/equipment.html?modelCode=" + vin);
+};
+
+function vwaudilane() {
+	window.open("http://windowsticker-prod.aws.manheim.com/windowsticker/" + vin+"/4905414");
+};
+
+
+// jquery to check checkboxes
+    $(document).ready(function() {
+	document.getElementById("kmxbutton").onclick = function () {
+            var favorite = [];
+            $.each($("input[name='options']:checked"), function(){            
+                favorite.push($(this).val());
+            });
+		if (document.getElementById("icyl").value !== "") {
+			var tcyl = "cylinders-" + document.getElementById("icyl").value;
+		
+		};
+		window.open("https://www.carmax.com/cars"  + "/" + document.getElementById("iyear").value + "/" + document.getElementById("imake").value + "/" + document.getElementById("imodel").value  + "/" + document.getElementById("itrim").value + "/" + tcyl + "/" + favorite.join("/") + "?zip=21162&sort=4&distance=all");
+        }; //);
+    });	
+	
+	
+	
 var input13 = document.getElementById("VINbar");
 	
 	input13.addEventListener("keyup", function(event) {
